@@ -5,7 +5,6 @@ from Ant import UNIT_STATS
 from Construction import CONSTR_STATS
 from Constants import *
 from Player import *
-from AgentTest import *
 import random
 import sys
 sys.path.append("..")  # so other modules can be found in parent dir
@@ -34,13 +33,93 @@ class AIPlayer(Player):
         self.root = None
         self.prune = True
         self.test = False
+        self.population = []
+        self.index = 0
+        self.fitness = []
+        self.fileName = "./schendel21_holbrook20_population.txt"
+        self.mutationChance = 0.05
+        self.mutationRange = 1.0
+        self.initPopulation()
 
     def init2(self):
       self.test = True
       self.winCount = -1
       self.moveCount = -1
       self.me = 0
+      
+    def initPopulation(self):
+      try:
+        f = open(self.fileName, "r")
+        lines = f.readlines()
+        for line in lines:
+          tempGene = line.split(",")
+          if len(tempGene) is not 12:
+            raise ValueError
+          self.population.append(tempGene)
+        f.close()
+      except:
+        for i in range(10):
+          tempGene = []
+          for j in range(12):
+            tempGene.append(random.uniform(-10, 10))
+          self.population.append(tempGene)
+      for i in range(10):
+        self.fitness.append(i)
+      
+      print ("Gen zero: {}".format(self.population))
+      self.nextGeneration()
+      print ("Kids: {}".format(self.population))
 
+    def matePopulation(self, mom, dad):
+       print("Mom: {}".format(mom))
+       print(dad)
+       splitIndex = random.randint(0,12)
+       childOne, childTwo= [], []
+       childOne.extend(mom[slice(splitIndex)])
+       childOne.extend(dad[slice(splitIndex, 12)])
+       
+       childTwo.extend(dad[slice(splitIndex)])
+       childTwo.extend(mom[slice(splitIndex, 12)])
+       
+       for index, weight in enumerate(childOne):
+        mutateFlag = random.uniform(0, 1)
+        if mutateFlag <= self.mutationChance:
+          print("mutation in child one")
+          mutationDegree = random.uniform(-self.mutationRange, self.mutationRange)
+          childOne[index] += mutationDegree
+       
+       for index, weight in enumerate(childTwo):
+        mutateFlag = random.uniform(0, 1)
+        if mutateFlag <= self.mutationChance:
+          print("mutation in child two")
+          mutationDegree = random.uniform(-self.mutationRange, self.mutationRange)
+          childOne[index] += mutationDegree
+          
+       return childOne, childTwo
+    
+    def nextGeneration(self):
+      total = sum(self.fitness)
+      newPopulation = []
+      for i in range(5):
+        mom = None
+        dad = None
+        for j in range(2):
+          selectedGeneIndex = random.uniform(0, total)
+          totalScore = 0
+          for index, score in enumerate(self.fitness):
+            if totalScore <= selectedGeneIndex and selectedGeneIndex <= (totalScore + score):
+              if j is 0:
+                mom = self.population[index]
+              elif j is 1:
+                dad = self.population[index]
+              else:
+                print("Invalid Index! {}".format(j))
+              break
+            totalScore += score
+        newPopulation.extend(self.matePopulation(mom, dad))
+      self.population = newPopulation
+      
+      
     ##
     #getPlacement
     #
@@ -264,88 +343,13 @@ class AIPlayer(Player):
       enemyOffense = getAntList(currentState, enemy, (SOLDIER, R_SOLDIER))
       enemyDrones = getAntList(currentState, enemy, (DRONE,))
 
-      # "steps" val that will be returned
       myScore = 0
       enemyScore = 0
 
-      # value army size
-      if me == self.me:
-        enemyScore += max((min(len(enemyDrones), 5) * 7), min(len(enemyOffense), 1) * 15)
-      else:
-        myScore += max((min(len(enemyDrones), 5) * 7), min(len(enemyOffense), 1) * 15)
-
-      # encourage more food gathering
-      myScore -= 10 if (myFood < 1) else 0
-      enemyScore -= 10 if (enemyFood < 1) else 0
-
-      # never want 0 workers
-      myScore -= 30 if (len(myWorkers) < 1) else 0
-      myScore += min(len(myWorkers), 2) * 10
-      enemyScore -= 30 if (len(enemyWorkers) < 1) else 0
-      enemyScore += min(len(enemyWorkers), 2) * 10
-      dist = 100
-      score = 0
-      offense = enemyOffense
-      hill = myHill
-      queen = myQueen
-      if not self.me == me:
-        offense = myOffense
-        hill = enemyHill
-        queen = enemyQueen
-      for ant in offense:
-        dist = approxDist(ant.coords, hill.coords)
-        score += 10 - min(dist, 10) // 2
-      if self.me == me:
-        enemyScore += 41 - 7*(hill.captureHealth) - 2*(queen.health) + score
-      else:
-        myScore += 41 - 7*(hill.captureHealth) - 2*(queen.health) + score
-
-      # Gather food
-      if me == self.me:
-        workers = myWorkers
-        tunnel = myTunnel
-        hill = myHill
-      else:
-        workers = enemyWorkers
-        tunnel = enemyTunnel
-        hill = enemyHill
-      score = 0
-      for w in workers:
-        if w.carrying: # if carrying go to hill/tunnel
-          score += 2
-          distanceToTunnel = approxDist(w.coords, tunnel.coords)
-          distanceToHill = approxDist(w.coords, hill.coords)
-          dist = min(distanceToHill, distanceToTunnel)
-          if dist <= 3:
-            score += 1
-        else: # if not carrying go to food
-          dist = 100
-          for food in foods:
-            temp = approxDist(w.coords, food.coords)
-            if temp < dist:
-              dist = temp
-          if dist <= 3:
-            score += 1
-      if self.me == me:
-        myScore += score
-      else:
-        enemyScore += score
-      myScore += myFood * 5
-
-      if self.me == me:
-        workers = enemyWorkers
-      else:
-        workers = myWorkers
-      score = 0
-      for w in workers:
-        if w.carrying:
-          enemyScore += 3
-      if self.me == me:
-        enemyScore += score
-      else:
-        myScore += score
-      enemyScore += enemyFood * 5
-
+      
+      
+      if me is not self.me:
+        print("I am not me")
       score = min(myScore - enemyScore, 95) if (myScore - enemyScore > 0) else max(myScore - enemyScore, -95)
       win = getWinner(currentState)
       if win is not None:
@@ -394,3 +398,18 @@ class Node:
 
   def setTurn(self, turn):
     self.turn = turn
+
+class Gene:
+  def __init__(self, food, qHealth, workerTarget, twoWorkers, offenseQueen, offenseWorker, offenseAnthill, queenThreats, anthillThreats, rangedSoldier, workerQueen, queenDist):
+    self.food = food
+    self.qHealth = qHealth
+    self.workerTarget = workerTarget
+    self.twoWorkers = twoWorkers
+    self.offenseQueen = offenseQueen
+    self.offenseWorker = offenseWorker
+    self.offenseAnthill = offenseAnthill
+    self.queenThreats = queenThreats
+    self.anthillThreats = anthillThreats
+    self.rangedSoldier = rangedSoldier
+    self.workerQueen = workerQueen
+    self.queenDist = queenDist
