@@ -1,0 +1,719 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ACTIVE	.\ReAntics\src\Constants.py	/^ACTIVE = 1$/;"	v
+AIPlayer	.\ReAntics\src\AI\Booger.py	/^class AIPlayer(Player):$/;"	c
+AIPlayer	.\ReAntics\src\AI\BoogerTestTimeout.py	/^class AIPlayer(Player):$/;"	c
+AIPlayer	.\ReAntics\src\AI\Complex Food Gatherer.py	/^class AIPlayer(Player):$/;"	c
+AIPlayer	.\ReAntics\src\AI\DefensiveV1.py	/^class AIPlayer(Player):$/;"	c
+AIPlayer	.\ReAntics\src\AI\ErrorHandlingStressTest.py	/^class AIPlayer(Player):$/;"	c
+AIPlayer	.\ReAntics\src\AI\FoodGatherer.py	/^class AIPlayer(Player):$/;"	c
+AIPlayer	.\ReAntics\src\AI\LearningV2.py	/^class AIPlayer(Player):$/;"	c
+AIPlayer	.\ReAntics\src\AI\Nibble.py	/^class AIPlayer(Player):$/;"	c
+AIPlayer	.\ReAntics\src\AI\Random.py	/^class AIPlayer(Player):$/;"	c
+AIPlayer	.\ReAntics\src\AI\Soldier.py	/^class AIPlayer(Player):$/;"	c
+AIPlayer	.\ReAntics\src\AI\Starve.py	/^class AIPlayer(Player):$/;"	c
+AIPlayer	.\ReAntics\src\AI\Very Complex Food Gatherer.py	/^class AIPlayer(Player):$/;"	c
+AIPlayer	.\ReAntics\src\AI\anthillAttackAI.py	/^class AIPlayer(Player):$/;"	c
+AIPlayer	.\ReAntics\src\AI\rangedSoldierTestAI.py	/^class AIPlayer(Player):$/;"	c
+AIPlayer	.\ReAntics\src\AI\shapeShifter.py	/^class AIPlayer(Player):$/;"	c
+AIPlayer	.\ReAntics\src\AI\vargaspu21_schendel21.py	/^class AIPlayer(Player):$/;"	c
+AI_MODE	.\ReAntics\src\Constants.py	/^AI_MODE = 2$/;"	v
+AI_MOVE_TIMEOUT	.\ReAntics\src\Constants.py	/^AI_MOVE_TIMEOUT = 30$/;"	v
+ANTHILL	.\ReAntics\src\Constants.py	/^ANTHILL = -4$/;"	v
+ANT_NAMES	.\ReAntics\src\SettingsPane.py	/^ANT_NAMES = [ "Workers", "Drones", "Soldiers", "Ranged Soldiers" ]$/;"	v
+ATTACK	.\ReAntics\src\Constants.py	/^ATTACK = 2$/;"	v
+AddPauseOptionsFrame	.\ReAntics\src\SettingsPane.py	/^class AddPauseOptionsFrame ( wgt.ScrollableFrame ) :$/;"	c
+AdditionalSettingsOptionsFrame	.\ReAntics\src\SettingsPane.py	/^class AdditionalSettingsOptionsFrame ( wgt.ScrollableFrame ) :$/;"	c
+Ant	.\ReAntics\src\Ant.py	/^class Ant(object):$/;"	c
+Ant	.\ReAntics\src\GameState.py	/^from Ant import Ant$/;"	i
+AntMod	.\ReAntics\src\SettingsPane.py	/^import Ant as AntMod$/;"	i
+AntPathCycle	.\ReAntics\src\AI\Complex Food Gatherer.py	/^class AntPathCycle():$/;"	c
+AntPathCycle	.\ReAntics\src\AI\DefensiveV1.py	/^class AntPathCycle():$/;"	c
+AntPathCycle	.\ReAntics\src\AI\Nibble.py	/^class AntPathCycle():$/;"	c
+AntPathCycle	.\ReAntics\src\AI\Soldier.py	/^class AntPathCycle():$/;"	c
+AntPathCycle	.\ReAntics\src\AI\Starve.py	/^class AntPathCycle():$/;"	c
+AntPathCycle	.\ReAntics\src\AI\Very Complex Food Gatherer.py	/^class AntPathCycle:$/;"	c
+AntPathCycle	.\ReAntics\src\AI\anthillAttackAI.py	/^class AntPathCycle():$/;"	c
+AntPathCycle	.\ReAntics\src\AI\shapeShifter.py	/^class AntPathCycle():$/;"	c
+BOARD_LENGTH	.\ReAntics\src\Constants.py	/^BOARD_LENGTH = 10$/;"	v
+BUILD	.\ReAntics\src\Constants.py	/^BUILD = 1$/;"	v
+BUILD_COST	.\ReAntics\src\Constants.py	/^BUILD_COST = 2$/;"	v
+BUTTON1_FONT	.\ReAntics\src\SettingsPane.py	/^BUTTON1_FONT = ( "Copperplate", 20, "bold")$/;"	v
+BUTTON2_FONT	.\ReAntics\src\SettingsPane.py	/^BUTTON2_FONT = ( "Copperplate", 15, "bold")$/;"	v
+BlueBox	.\ReAntics\src\SettingsPane.py	/^class BlueBox ( tk.Frame ) :$/;"	c
+BoardButton	.\ReAntics\src\GamePane.py	/^class BoardButton:$/;"	c
+Building	.\ReAntics\src\Building.py	/^class Building(Construction):$/;"	c
+Building	.\ReAntics\src\GameState.py	/^from Building import Building$/;"	i
+CAP_HEALTH	.\ReAntics\src\Constants.py	/^CAP_HEALTH = 1$/;"	v
+CONSTR_STATS	.\ReAntics\src\AI\Booger.py	/^from Construction import CONSTR_STATS$/;"	i
+CONSTR_STATS	.\ReAntics\src\AI\BoogerTestTimeout.py	/^from Construction import CONSTR_STATS$/;"	i
+CONSTR_STATS	.\ReAntics\src\AI\Complex Food Gatherer.py	/^from Construction import CONSTR_STATS$/;"	i
+CONSTR_STATS	.\ReAntics\src\AI\ErrorHandlingStressTest.py	/^from Construction import CONSTR_STATS$/;"	i
+CONSTR_STATS	.\ReAntics\src\AI\FoodGatherer.py	/^from Construction import CONSTR_STATS$/;"	i
+CONSTR_STATS	.\ReAntics\src\AI\Nibble.py	/^from Construction import CONSTR_STATS$/;"	i
+CONSTR_STATS	.\ReAntics\src\AI\Random.py	/^from Construction import CONSTR_STATS$/;"	i
+CONSTR_STATS	.\ReAntics\src\AI\Soldier.py	/^from Construction import CONSTR_STATS$/;"	i
+CONSTR_STATS	.\ReAntics\src\AI\Starve.py	/^from Construction import CONSTR_STATS$/;"	i
+CONSTR_STATS	.\ReAntics\src\AI\Very Complex Food Gatherer.py	/^from Construction import CONSTR_STATS$/;"	i
+CONSTR_STATS	.\ReAntics\src\AI\anthillAttackAI.py	/^from Construction import CONSTR_STATS$/;"	i
+CONSTR_STATS	.\ReAntics\src\AI\rangedSoldierTestAI.py	/^from Construction import CONSTR_STATS$/;"	i
+CONSTR_STATS	.\ReAntics\src\AI\shapeShifter.py	/^from Construction import CONSTR_STATS$/;"	i
+CONSTR_STATS	.\ReAntics\src\AI\vargaspu21_schendel21.py	/^from Construction import CONSTR_STATS$/;"	i
+CONSTR_STATS	.\ReAntics\src\Construction.py	/^CONSTR_STATS = []$/;"	v
+COPY	.\ReAntics\src\Constants.py	/^COPY = -2$/;"	v
+COST	.\ReAntics\src\Constants.py	/^COST = 4$/;"	v
+ColoredButton	.\ReAntics\src\RedoneWidgets.py	/^class ColoredButton(tk.Label):$/;"	c
+ConsolidatedState	.\ReAntics\src\AI\LearningV2.py	/^class ConsolidatedState:$/;"	c
+ConstrMod	.\ReAntics\src\SettingsPane.py	/^import Construction as ConstrMod$/;"	i
+Construction	.\ReAntics\src\Construction.py	/^class Construction(object):$/;"	c
+DATA_FILE	.\ReAntics\src\AI\LearningV2.py	/^DATA_FILE = "learningV2.pickle"$/;"	v
+DRONE	.\ReAntics\src\Constants.py	/^DRONE = 2$/;"	v
+END	.\ReAntics\src\Constants.py	/^END = 2$/;"	v
+ERROR_CODE	.\ReAntics\src\SettingsPane.py	/^ERROR_CODE = -1$/;"	v
+FLASH_COLOR	.\ReAntics\src\RedoneWidgets.py	/^FLASH_COLOR = "#425261"$/;"	v
+FLASH_TIME	.\ReAntics\src\RedoneWidgets.py	/^FLASH_TIME = 0.05$/;"	v
+FL_BD	.\ReAntics\src\SettingsPane.py	/^FL_BD = 5$/;"	v
+FL_BD	.\ReAntics\src\StatsPane.py	/^FL_BD = 5$/;"	v
+FL_COLOR	.\ReAntics\src\SettingsPane.py	/^FL_COLOR = "black"$/;"	v
+FL_COLOR	.\ReAntics\src\StatsPane.py	/^FL_COLOR = "black"$/;"	v
+FL_FONT	.\ReAntics\src\SettingsPane.py	/^FL_FONT = ( "Harrington", 18, "bold")$/;"	v
+FL_FONT	.\ReAntics\src\StatsPane.py	/^FL_FONT = ( "Harrington", 16, "bold")$/;"	v
+FL_STYLE	.\ReAntics\src\SettingsPane.py	/^FL_STYLE = "ridge"$/;"	v
+FL_STYLE	.\ReAntics\src\StatsPane.py	/^FL_STYLE = "ridge"$/;"	v
+FL_TEXT_COLOR	.\ReAntics\src\SettingsPane.py	/^FL_TEXT_COLOR = "white"$/;"	v
+FL_TEXT_COLOR	.\ReAntics\src\StatsPane.py	/^FL_TEXT_COLOR = "white"$/;"	v
+FOOD	.\ReAntics\src\Constants.py	/^FOOD = -1$/;"	v
+FOOD_GOAL	.\ReAntics\src\Constants.py	/^FOOD_GOAL = 11$/;"	v
+FRAME_BDR	.\ReAntics\src\SettingsPane.py	/^FRAME_BDR = 5$/;"	v
+F_BORDER	.\ReAntics\src\StatsPane.py	/^F_BORDER = 5$/;"	v
+Font	.\ReAntics\src\RedoneWidgets.py	/^from tkinter.font import Font$/;"	i
+Font	.\ReAntics\src\SettingsPane.py	/^from tkinter.font import Font$/;"	i
+GAME_TYPES	.\ReAntics\src\SettingsPane.py	/^GAME_TYPES = [ "QuickStart", "Two Player", "Play Self", "Round Robin", "Play All" ]$/;"	v
+GRASS	.\ReAntics\src\Constants.py	/^GRASS = -2$/;"	v
+GREEN	.\ReAntics\src\RedoneWidgets.py	/^GREEN = "#398e2e"$/;"	v
+GUIHandler	.\ReAntics\src\GUIHandler.py	/^class GUIHandler:$/;"	c
+Game	.\ReAntics\src\Game.py	/^class Game(object):$/;"	c
+GameData	.\ReAntics\src\Game.py	/^class GameData:$/;"	c
+GameGUIData	.\ReAntics\src\SettingsPane.py	/^class GameGUIData () :$/;"	c
+GamePane	.\ReAntics\src\GamePane.py	/^class GamePane:$/;"	c
+GameSettingsFrame	.\ReAntics\src\SettingsPane.py	/^class GameSettingsFrame ( ) :$/;"	c
+GameState	.\ReAntics\src\GameState.py	/^class GameState(object):$/;"	c
+GraphNode	.\ReAntics\src\AIPlayerUtils.py	/^class GraphNode:$/;"	c
+HEALTH	.\ReAntics\src\Constants.py	/^HEALTH = 1$/;"	v
+HEIGHT	.\ReAntics\src\StatsPane.py	/^HEIGHT = 27#20$/;"	v
+HUMAN	.\ReAntics\src\Constants.py	/^HUMAN = -1$/;"	v
+HUMAN_MODE	.\ReAntics\src\Constants.py	/^HUMAN_MODE = 1$/;"	v
+HelloUI	.\ReAntics\Hello World.py	/^class HelloUI(tk.Frame):$/;"	c
+HumanPlayer	.\ReAntics\src\Game.py	/^import HumanPlayer$/;"	i
+HumanPlayer	.\ReAntics\src\HumanPlayer.py	/^class HumanPlayer(Player):$/;"	c
+IGNORES_GRASS	.\ReAntics\src\Constants.py	/^IGNORES_GRASS = 5$/;"	v
+INACTIVE	.\ReAntics\src\Constants.py	/^INACTIVE = 0$/;"	v
+INVALID_ATTACK	.\ReAntics\src\Constants.py	/^INVALID_ATTACK = 2$/;"	v
+INVALID_MOVE	.\ReAntics\src\Constants.py	/^INVALID_MOVE = 1$/;"	v
+INVALID_PLACEMENT	.\ReAntics\src\Constants.py	/^INVALID_PLACEMENT = 0$/;"	v
+Inventory	.\ReAntics\src\GameState.py	/^from Inventory import Inventory$/;"	i
+Inventory	.\ReAntics\src\Inventory.py	/^class Inventory(object):$/;"	c
+Is	.\ReAntics\src\Game.py	/^import InfoScraper as Is$/;"	i
+LAYOUT_OPTIONS	.\ReAntics\src\SettingsPane.py	/^LAYOUT_OPTIONS = [ "Player Invoked", "Random Override" ]$/;"	v
+LIGHT_BLUE	.\ReAntics\src\RedoneWidgets.py	/^LIGHT_BLUE = "#a8d5ff"$/;"	v
+LIGHT_GREEN	.\ReAntics\src\RedoneWidgets.py	/^LIGHT_GREEN = "#80c577"$/;"	v
+LIGHT_PURPLE	.\ReAntics\src\RedoneWidgets.py	/^LIGHT_PURPLE = "#c9b6e3"$/;"	v
+LIGHT_RED	.\ReAntics\src\RedoneWidgets.py	/^LIGHT_RED = "#b8746e"$/;"	v
+LOSE_STATE	.\ReAntics\src\AI\LearningV2.py	/^LOSE_STATE = -1.0$/;"	v
+Location	.\ReAntics\src\Location.py	/^class Location(object):$/;"	c
+MENU_PHASE	.\ReAntics\src\Constants.py	/^MENU_PHASE = 0$/;"	v
+MOVEMENT	.\ReAntics\src\Constants.py	/^MOVEMENT = 0$/;"	v
+MOVE_ANT	.\ReAntics\src\Constants.py	/^MOVE_ANT = 0$/;"	v
+MOVE_COST	.\ReAntics\src\Constants.py	/^MOVE_COST = 0$/;"	v
+Move	.\ReAntics\src\AI\Booger.py	/^from Move import Move$/;"	i
+Move	.\ReAntics\src\AI\BoogerTestTimeout.py	/^from Move import Move$/;"	i
+Move	.\ReAntics\src\AI\Complex Food Gatherer.py	/^from Move import Move$/;"	i
+Move	.\ReAntics\src\AI\ErrorHandlingStressTest.py	/^from Move import Move$/;"	i
+Move	.\ReAntics\src\AI\FoodGatherer.py	/^from Move import Move$/;"	i
+Move	.\ReAntics\src\AI\Nibble.py	/^from Move import Move$/;"	i
+Move	.\ReAntics\src\AI\Random.py	/^from Move import Move$/;"	i
+Move	.\ReAntics\src\AI\Soldier.py	/^from Move import Move$/;"	i
+Move	.\ReAntics\src\AI\Starve.py	/^from Move import Move$/;"	i
+Move	.\ReAntics\src\AI\Very Complex Food Gatherer.py	/^from Move import Move$/;"	i
+Move	.\ReAntics\src\AI\anthillAttackAI.py	/^from Move import Move$/;"	i
+Move	.\ReAntics\src\AI\rangedSoldierTestAI.py	/^from Move import Move$/;"	i
+Move	.\ReAntics\src\AI\shapeShifter.py	/^from Move import Move$/;"	i
+Move	.\ReAntics\src\AI\vargaspu21_schendel21.py	/^from Move import Move$/;"	i
+Move	.\ReAntics\src\Move.py	/^class Move(object):$/;"	c
+NEUTRAL	.\ReAntics\src\Constants.py	/^NEUTRAL    = 2$/;"	v
+Node	.\ReAntics\src\AI\vargaspu21_schendel21.py	/^class Node:$/;"	c
+ONGOING_STATE	.\ReAntics\src\AI\LearningV2.py	/^ONGOING_STATE = 0.0$/;"	v
+PLAYERS	.\ReAntics\src\SettingsPane.py	/^PLAYERS = []$/;"	v
+PLAYER_COLORS	.\ReAntics\src\SettingsPane.py	/^PLAYER_COLORS = [ "red", "blue" ] $/;"	v
+PLAYER_COLORS_LIGHT	.\ReAntics\src\SettingsPane.py	/^PLAYER_COLORS_LIGHT = [ wgt.LIGHT_RED, wgt.LIGHT_BLUE ]$/;"	v
+PLAYER_COLS	.\ReAntics\src\SettingsPane.py	/^PLAYER_COLS = 1 $/;"	v
+PLAYER_ONE	.\ReAntics\src\Constants.py	/^PLAYER_ONE = 0$/;"	v
+PLAYER_TWO	.\ReAntics\src\Constants.py	/^PLAYER_TWO = 1$/;"	v
+PLAY_PHASE	.\ReAntics\src\Constants.py	/^PLAY_PHASE = 3$/;"	v
+PauseConditionGUIData	.\ReAntics\src\SettingsPane.py	/^class PauseConditionGUIData () :$/;"	c
+PermanentlyStop	.\ReAntics\src\RedoneWidgets.py	/^    def PermanentlyStop(self) :$/;"	m	class:StopWatch
+Player	.\ReAntics\src\Game.py	/^from Player import Player$/;"	i
+Player	.\ReAntics\src\Player.py	/^class Player(object):$/;"	c
+PurpleBox	.\ReAntics\src\StatsPane.py	/^class PurpleBox ( tkinter.Frame ) :$/;"	c
+QUEEN	.\ReAntics\src\Constants.py	/^QUEEN = 0$/;"	v
+QuickStartFrame	.\ReAntics\src\SettingsPane.py	/^class QuickStartFrame ( tk.Frame ) :$/;"	c
+RANGE	.\ReAntics\src\Constants.py	/^RANGE = 3$/;"	v
+RED	.\ReAntics\src\RedoneWidgets.py	/^RED = "#c3473c"$/;"	v
+R_SOLDIER	.\ReAntics\src\Constants.py	/^R_SOLDIER = 4$/;"	v
+RedoneWidgets	.\ReAntics\src\GUIHandler.py	/^import RedoneWidgets$/;"	i
+Reset	.\ReAntics\src\RedoneWidgets.py	/^    def Reset(self):$/;"	m	class:StopWatch
+RoundRobinFrame	.\ReAntics\src\SettingsPane.py	/^class RoundRobinFrame ( tk.Frame ) :$/;"	c
+SETTINGS_FILE	.\ReAntics\src\SettingsPane.py	/^SETTINGS_FILE = "my-settings.json"$/;"	v
+SETUP_PHASE_1	.\ReAntics\src\Constants.py	/^SETUP_PHASE_1 = 1$/;"	v
+SETUP_PHASE_2	.\ReAntics\src\Constants.py	/^SETUP_PHASE_2 = 2$/;"	v
+SOLDIER	.\ReAntics\src\Constants.py	/^SOLDIER = 3$/;"	v
+ScrollableFrame	.\ReAntics\src\RedoneWidgets.py	/^class ScrollableFrame ( tk.Frame ) :$/;"	c
+ShowError	.\ReAntics\src\RedoneWidgets.py	/^def ShowError(title='Title', message='your message here.', root = None):$/;"	f
+ShowInfo	.\ReAntics\src\RedoneWidgets.py	/^def ShowInfo(title='Title', message='your message here.', root = None):$/;"	f
+ShowWarning	.\ReAntics\src\RedoneWidgets.py	/^def ShowWarning(title='Title', message='your message here.', root = None):$/;"	f
+SinglePlayerFrame	.\ReAntics\src\SettingsPane.py	/^class SinglePlayerFrame ( tk.Frame ) :$/;"	c
+Start	.\ReAntics\src\RedoneWidgets.py	/^    def Start(self):$/;"	m	class:StopWatch
+StatsPane	.\ReAntics\src\StatsPane.py	/^class StatsPane:$/;"	c
+Stop	.\ReAntics\src\RedoneWidgets.py	/^    def Stop(self):$/;"	m	class:StopWatch
+StopWatch	.\ReAntics\src\RedoneWidgets.py	/^class StopWatch(tk.Frame):$/;"	c
+TOURNAMENT_MODE	.\ReAntics\src\Constants.py	/^TOURNAMENT_MODE = 0$/;"	v
+TUNNEL	.\ReAntics\src\Constants.py	/^TUNNEL = -3$/;"	v
+Thread	.\ReAntics\src\Game.py	/^from threading import Thread$/;"	i
+TwoPlayerFrame	.\ReAntics\src\SettingsPane.py	/^class TwoPlayerFrame ( tk.Frame ) :$/;"	c
+UIbuttonPressed	.\ReAntics\src\GamePane.py	/^    def UIbuttonPressed(self):$/;"	m	class:GamePane
+UIbuttonPressed	.\ReAntics\src\StatsPane.py	/^    def UIbuttonPressed(self):$/;"	m	class:StatsPane
+UNDO	.\ReAntics\src\Constants.py	/^UNDO = 3$/;"	v
+UNIT_STATS	.\ReAntics\src\AI\Booger.py	/^from Ant import UNIT_STATS$/;"	i
+UNIT_STATS	.\ReAntics\src\AI\BoogerTestTimeout.py	/^from Ant import UNIT_STATS$/;"	i
+UNIT_STATS	.\ReAntics\src\AI\Complex Food Gatherer.py	/^from Ant import UNIT_STATS$/;"	i
+UNIT_STATS	.\ReAntics\src\AI\ErrorHandlingStressTest.py	/^from Ant import UNIT_STATS$/;"	i
+UNIT_STATS	.\ReAntics\src\AI\FoodGatherer.py	/^from Ant import UNIT_STATS$/;"	i
+UNIT_STATS	.\ReAntics\src\AI\Nibble.py	/^from Ant import UNIT_STATS$/;"	i
+UNIT_STATS	.\ReAntics\src\AI\Random.py	/^from Ant import UNIT_STATS$/;"	i
+UNIT_STATS	.\ReAntics\src\AI\Soldier.py	/^from Ant import UNIT_STATS$/;"	i
+UNIT_STATS	.\ReAntics\src\AI\Starve.py	/^from Ant import UNIT_STATS$/;"	i
+UNIT_STATS	.\ReAntics\src\AI\Very Complex Food Gatherer.py	/^from Ant import UNIT_STATS$/;"	i
+UNIT_STATS	.\ReAntics\src\AI\anthillAttackAI.py	/^from Ant import UNIT_STATS$/;"	i
+UNIT_STATS	.\ReAntics\src\AI\rangedSoldierTestAI.py	/^from Ant import UNIT_STATS$/;"	i
+UNIT_STATS	.\ReAntics\src\AI\shapeShifter.py	/^from Ant import UNIT_STATS$/;"	i
+UNIT_STATS	.\ReAntics\src\AI\vargaspu21_schendel21.py	/^from Ant import UNIT_STATS$/;"	i
+UNIT_STATS	.\ReAntics\src\Ant.py	/^UNIT_STATS = []$/;"	v
+WIDTH	.\ReAntics\src\StatsPane.py	/^WIDTH = 35$/;"	v
+WIN_STATE	.\ReAntics\src\AI\LearningV2.py	/^WIN_STATE = 1.0$/;"	v
+WORKER	.\ReAntics\src\Constants.py	/^WORKER = 1$/;"	v
+__eq__	.\ReAntics\src\AIPlayerUtils.py	/^    def __eq__(self, other):$/;"	m	class:GraphNode	file:
+__eq__	.\ReAntics\src\AI\LearningV2.py	/^    def __eq__(self, other):$/;"	m	class:ConsolidatedState	file:
+__hash__	.\ReAntics\src\AIPlayerUtils.py	/^    def __hash__(self):$/;"	m	class:GraphNode	file:
+__hash__	.\ReAntics\src\AI\LearningV2.py	/^    def __hash__(self):$/;"	m	class:ConsolidatedState	file:
+__init__	.\ReAntics\Hello World.py	/^    def __init__(self, parent = None):$/;"	m	class:HelloUI
+__init__	.\ReAntics\src\AIPlayerUtils.py	/^    def __init__(self, parent=None, coords=None, f=0.0, g=0.0, h=0.0):$/;"	m	class:GraphNode
+__init__	.\ReAntics\src\AI\Booger.py	/^    def __init__(self, inputPlayerId):$/;"	m	class:AIPlayer
+__init__	.\ReAntics\src\AI\BoogerTestTimeout.py	/^    def __init__(self, inputPlayerId):$/;"	m	class:AIPlayer
+__init__	.\ReAntics\src\AI\Complex Food Gatherer.py	/^    def __init__(self, foodCoords, depositCoords):$/;"	m	class:AntPathCycle
+__init__	.\ReAntics\src\AI\Complex Food Gatherer.py	/^    def __init__(self, inputPlayerId):$/;"	m	class:AIPlayer
+__init__	.\ReAntics\src\AI\DefensiveV1.py	/^    def __init__(self, foodCoords, depositCoords):$/;"	m	class:AntPathCycle
+__init__	.\ReAntics\src\AI\DefensiveV1.py	/^    def __init__(self, inputPlayerId):$/;"	m	class:AIPlayer
+__init__	.\ReAntics\src\AI\ErrorHandlingStressTest.py	/^    def __init__(self, inputPlayerId):$/;"	m	class:AIPlayer
+__init__	.\ReAntics\src\AI\FoodGatherer.py	/^    def __init__(self, inputPlayerId):$/;"	m	class:AIPlayer
+__init__	.\ReAntics\src\AI\LearningV2.py	/^    def __init__(self, inputPlayerId):$/;"	m	class:AIPlayer
+__init__	.\ReAntics\src\AI\LearningV2.py	/^    def __init__(self, theState = None, playerID = None):$/;"	m	class:ConsolidatedState
+__init__	.\ReAntics\src\AI\Nibble.py	/^    def __init__(self, foodCoords, depositCoords):$/;"	m	class:AntPathCycle
+__init__	.\ReAntics\src\AI\Nibble.py	/^    def __init__(self, inputPlayerId):$/;"	m	class:AIPlayer
+__init__	.\ReAntics\src\AI\Random.py	/^    def __init__(self, inputPlayerId):$/;"	m	class:AIPlayer
+__init__	.\ReAntics\src\AI\Soldier.py	/^    def __init__(self, foodCoords, depositCoords):$/;"	m	class:AntPathCycle
+__init__	.\ReAntics\src\AI\Soldier.py	/^    def __init__(self, inputPlayerId):$/;"	m	class:AIPlayer
+__init__	.\ReAntics\src\AI\Starve.py	/^    def __init__(self, foodCoords, depositCoords):$/;"	m	class:AntPathCycle
+__init__	.\ReAntics\src\AI\Starve.py	/^    def __init__(self, inputPlayerId):$/;"	m	class:AIPlayer
+__init__	.\ReAntics\src\AI\Very Complex Food Gatherer.py	/^    def __init__(self, foodCoords, depositCoords):$/;"	m	class:AntPathCycle
+__init__	.\ReAntics\src\AI\Very Complex Food Gatherer.py	/^    def __init__(self, inputPlayerId):$/;"	m	class:AIPlayer
+__init__	.\ReAntics\src\AI\anthillAttackAI.py	/^    def __init__(self, foodCoords, depositCoords):$/;"	m	class:AntPathCycle
+__init__	.\ReAntics\src\AI\anthillAttackAI.py	/^    def __init__(self, inputPlayerId):$/;"	m	class:AIPlayer
+__init__	.\ReAntics\src\AI\rangedSoldierTestAI.py	/^    def __init__(self, inputPlayerId):$/;"	m	class:AIPlayer
+__init__	.\ReAntics\src\AI\shapeShifter.py	/^    def __init__(self, foodCoords, depositCoords):$/;"	m	class:AntPathCycle
+__init__	.\ReAntics\src\AI\shapeShifter.py	/^    def __init__(self, inputPlayerId):$/;"	m	class:AIPlayer
+__init__	.\ReAntics\src\AI\vargaspu21_schendel21.py	/^    def __init__(self, inputPlayerId):$/;"	m	class:AIPlayer
+__init__	.\ReAntics\src\AI\vargaspu21_schendel21.py	/^  def __init__(self, move, state, depth, score, parent):$/;"	m	class:Node
+__init__	.\ReAntics\src\Ant.py	/^    def __init__(self, inputCoords, inputType, inputPlayer):$/;"	m	class:Ant
+__init__	.\ReAntics\src\Building.py	/^    def __init__(self, inputCoords, inputType, inputPlayer, captureHealth=None):$/;"	m	class:Building
+__init__	.\ReAntics\src\Construction.py	/^    def __init__(self, inputCoords, inputType):$/;"	m	class:Construction
+__init__	.\ReAntics\src\GUIHandler.py	/^    def __init__(self, game):$/;"	m	class:GUIHandler
+__init__	.\ReAntics\src\Game.py	/^    def __init__(self, p1: Player, p2: Player, numGames=1):$/;"	m	class:GameData
+__init__	.\ReAntics\src\Game.py	/^    def __init__(self, testing=False):$/;"	m	class:Game
+__init__	.\ReAntics\src\GamePane.py	/^    def __init__(self, handler, parent):$/;"	m	class:GamePane
+__init__	.\ReAntics\src\GamePane.py	/^    def __init__(self, parent, handler, x, y):$/;"	m	class:BoardButton
+__init__	.\ReAntics\src\GameState.py	/^    def __init__(self, inputBoard, inputInventories, inputPhase, inputTurn):$/;"	m	class:GameState
+__init__	.\ReAntics\src\HumanPlayer.py	/^    def __init__(self, inputPlayerId):$/;"	m	class:HumanPlayer
+__init__	.\ReAntics\src\Inventory.py	/^    def __init__(self, playerId, antArray, inputConstructions, inputFood):$/;"	m	class:Inventory
+__init__	.\ReAntics\src\Location.py	/^    def __init__(self, inputCoordinates):$/;"	m	class:Location
+__init__	.\ReAntics\src\Move.py	/^    def __init__(self, inputMoveType, inputCoordList = None, inputBuildType = None):$/;"	m	class:Move
+__init__	.\ReAntics\src\Player.py	/^    def __init__(self, inputPlayerId, inputAuthor):$/;"	m	class:Player
+__init__	.\ReAntics\src\RedoneWidgets.py	/^    def __init__ ( self, master, **kwargs ) :$/;"	m	class:ScrollableFrame
+__init__	.\ReAntics\src\RedoneWidgets.py	/^    def __init__(self, parent = None, text = "", backgroundcolor = "green",$/;"	m	class:ColoredButton
+__init__	.\ReAntics\src\RedoneWidgets.py	/^    def __init__(self, parent=None, **kw):$/;"	m	class:StopWatch
+__init__	.\ReAntics\src\SettingsPane.py	/^    def __init__ ( self, conditions = {}, players = [], box = None ) :$/;"	m	class:PauseConditionGUIData
+__init__	.\ReAntics\src\SettingsPane.py	/^    def __init__ ( self, game_type = "", num_games = 0, players = [], box = None ) :$/;"	m	class:GameGUIData
+__init__	.\ReAntics\src\SettingsPane.py	/^    def __init__ ( self, parent = None) :$/;"	m	class:AddPauseOptionsFrame
+__init__	.\ReAntics\src\SettingsPane.py	/^    def __init__ ( self, parent = None) :$/;"	m	class:AdditionalSettingsOptionsFrame
+__init__	.\ReAntics\src\SettingsPane.py	/^    def __init__ ( self, parent = None) :$/;"	m	class:BlueBox
+__init__	.\ReAntics\src\SettingsPane.py	/^    def __init__(self, handler, parent = None):$/;"	m	class:GameSettingsFrame
+__init__	.\ReAntics\src\SettingsPane.py	/^    def __init__(self, parent = None):$/;"	m	class:QuickStartFrame
+__init__	.\ReAntics\src\SettingsPane.py	/^    def __init__(self, parent = None):$/;"	m	class:RoundRobinFrame
+__init__	.\ReAntics\src\SettingsPane.py	/^    def __init__(self, parent = None):$/;"	m	class:TwoPlayerFrame
+__init__	.\ReAntics\src\SettingsPane.py	/^    def __init__(self, parent = None, p2Note = "Self"):$/;"	m	class:SinglePlayerFrame
+__init__	.\ReAntics\src\StatsPane.py	/^    def __init__ ( self, parent = None) :$/;"	m	class:PurpleBox
+__init__	.\ReAntics\src\StatsPane.py	/^    def __init__(self, handler, parent):$/;"	m	class:StatsPane
+__str__	.\ReAntics\src\AIPlayerUtils.py	/^    def __str__(self):$/;"	m	class:GraphNode	file:
+__str__	.\ReAntics\src\Move.py	/^    def __str__(self):$/;"	m	class:Move	file:
+_setTime	.\ReAntics\src\RedoneWidgets.py	/^    def _setTime(self, elap, string_obj):$/;"	m	class:StopWatch
+_update	.\ReAntics\src\RedoneWidgets.py	/^    def _update(self, string_obj, rate):$/;"	m	class:StopWatch
+a	.\ReAntics\src\Game.py	/^    a = Game()$/;"	v	class:Game
+aStarSearchPath	.\ReAntics\src\AIPlayerUtils.py	/^def aStarSearchPath(currentState, start, goal):$/;"	f
+addAnt	.\ReAntics\src\AI\Complex Food Gatherer.py	/^    def addAnt(self, newCoords):$/;"	m	class:AntPathCycle
+addAnt	.\ReAntics\src\AI\DefensiveV1.py	/^    def addAnt(self, newCoords):$/;"	m	class:AntPathCycle
+addAnt	.\ReAntics\src\AI\Nibble.py	/^    def addAnt(self, newCoords):$/;"	m	class:AntPathCycle
+addAnt	.\ReAntics\src\AI\Soldier.py	/^    def addAnt(self, newCoords):$/;"	m	class:AntPathCycle
+addAnt	.\ReAntics\src\AI\Starve.py	/^    def addAnt(self, newCoords):$/;"	m	class:AntPathCycle
+addAnt	.\ReAntics\src\AI\Very Complex Food Gatherer.py	/^    def addAnt(self, newCoords):$/;"	m	class:AntPathCycle
+addAnt	.\ReAntics\src\AI\anthillAttackAI.py	/^    def addAnt(self, newCoords):$/;"	m	class:AntPathCycle
+addAnt	.\ReAntics\src\AI\shapeShifter.py	/^    def addAnt(self, newCoords):$/;"	m	class:AntPathCycle
+addCheckOption	.\ReAntics\src\SettingsPane.py	/^    def addCheckOption ( self, name, text, row ) :$/;"	m	class:AdditionalSettingsOptionsFrame
+addCoords	.\ReAntics\src\AI\Booger.py	/^from GameState import addCoords$/;"	i
+addCoords	.\ReAntics\src\AI\BoogerTestTimeout.py	/^from GameState import addCoords$/;"	i
+addCoords	.\ReAntics\src\AI\Complex Food Gatherer.py	/^from GameState import addCoords$/;"	i
+addCoords	.\ReAntics\src\AI\FoodGatherer.py	/^from GameState import addCoords$/;"	i
+addCoords	.\ReAntics\src\AI\Nibble.py	/^from GameState import addCoords$/;"	i
+addCoords	.\ReAntics\src\AI\Soldier.py	/^from GameState import addCoords$/;"	i
+addCoords	.\ReAntics\src\AI\Starve.py	/^from GameState import addCoords$/;"	i
+addCoords	.\ReAntics\src\AI\Very Complex Food Gatherer.py	/^from GameState import addCoords$/;"	i
+addCoords	.\ReAntics\src\AI\anthillAttackAI.py	/^from GameState import addCoords$/;"	i
+addCoords	.\ReAntics\src\AI\rangedSoldierTestAI.py	/^from GameState import addCoords$/;"	i
+addCoords	.\ReAntics\src\AI\shapeShifter.py	/^from GameState import addCoords$/;"	i
+addCoords	.\ReAntics\src\GameState.py	/^def addCoords(tuple1, tuple2):$/;"	f
+addGameChanged	.\ReAntics\src\SettingsPane.py	/^    def addGameChanged ( self, option ) :$/;"	m	class:GameSettingsFrame
+addGameToLog	.\ReAntics\src\StatsPane.py	/^    def addGameToLog ( self ) :$/;"	m	class:StatsPane
+addLogItem	.\ReAntics\src\StatsPane.py	/^    def addLogItem ( self ) :$/;"	m	class:StatsPane
+addPlayer	.\ReAntics\src\Game.py	/^    def addPlayer(self, p: Player):$/;"	m	class:Game
+antTypeToStr	.\ReAntics\src\Constants.py	/^def antTypeToStr(type):$/;"	f
+app	.\ReAntics\Hello World.py	/^app = HelloUI(tk.Tk())$/;"	v
+approxDist	.\ReAntics\src\AIPlayerUtils.py	/^def approxDist(sourceCoords, targetCoords):$/;"	f
+argparse	.\ReAntics\src\Game.py	/^import argparse$/;"	i
+asciiPrintState	.\ReAntics\src\AIPlayerUtils.py	/^def asciiPrintState(state):$/;"	f
+askOKCancel	.\ReAntics\src\RedoneWidgets.py	/^def askOKCancel(title='Title', message='your message here.', root = None):$/;"	f
+askQuestion	.\ReAntics\src\RedoneWidgets.py	/^def askQuestion(title='Title', message='your message here.', root = None):$/;"	f
+badMove	.\ReAntics\src\AI\LearningV2.py	/^    def badMove(self, selectedMove, currentState):$/;"	m	class:AIPlayer
+base64	.\ReAntics\src\GUIHandler.py	/^import base64$/;"	i
+bestMove	.\ReAntics\src\AI\vargaspu21_schendel21.py	/^    def bestMove(self, nodes):$/;"	m	class:AIPlayer
+bestScore	.\ReAntics\src\AI\LearningV2.py	/^    def bestScore(self, listOfNodes, depthLevel, player):$/;"	m	class:AIPlayer
+boardButtonPressed	.\ReAntics\src\GamePane.py	/^    def boardButtonPressed(self, x, y):$/;"	m	class:GamePane
+buildAnt	.\ReAntics\src\GamePane.py	/^    def buildAnt(self, ant):$/;"	m	class:GamePane
+buildTypeToStr	.\ReAntics\src\Constants.py	/^def buildTypeToStr(type):$/;"	f
+changeFrameQS	.\ReAntics\src\SettingsPane.py	/^    def changeFrameQS ( self ) :$/;"	m	class:GameSettingsFrame
+changeFrameStart	.\ReAntics\src\SettingsPane.py	/^    def changeFrameStart ( self ) :$/;"	m	class:GameSettingsFrame
+changePlayers	.\ReAntics\src\SettingsPane.py	/^    def changePlayers ( self, plyrs ) :$/;"	m	class:GameSettingsFrame
+charRepAnt	.\ReAntics\src\AIPlayerUtils.py	/^def charRepAnt(ant):$/;"	f
+charRepConstr	.\ReAntics\src\AIPlayerUtils.py	/^def charRepConstr(constr):$/;"	f
+charRepLoc	.\ReAntics\src\AIPlayerUtils.py	/^def charRepLoc(loc):$/;"	f
+checkBuildStart	.\ReAntics\src\Game.py	/^    def checkBuildStart(self, coord):$/;"	m	class:Game
+checkMovePath	.\ReAntics\src\Game.py	/^    def checkMovePath(self, fromCoord, toCoord):$/;"	m	class:Game
+checkMoveStart	.\ReAntics\src\Game.py	/^    def checkMoveStart(self, coord):$/;"	m	class:Game
+clearConstrs	.\ReAntics\src\GameState.py	/^    def clearConstrs(self):$/;"	m	class:GameState
+clearGameList	.\ReAntics\src\SettingsPane.py	/^    def clearGameList ( self ) :$/;"	m	class:GameSettingsFrame
+clearHighlights	.\ReAntics\src\GamePane.py	/^    def clearHighlights(self):$/;"	m	class:GamePane
+clearLog	.\ReAntics\src\StatsPane.py	/^    def clearLog(self):$/;"	m	class:StatsPane
+clearPCList	.\ReAntics\src\SettingsPane.py	/^    def clearPCList ( self ) :$/;"	m	class:GameSettingsFrame
+clicked	.\ReAntics\src\SettingsPane.py	/^    def clicked ( self, opt ) :$/;"	m	class:AdditionalSettingsOptionsFrame
+clone	.\ReAntics\src\Ant.py	/^    def clone(self):$/;"	m	class:Ant
+clone	.\ReAntics\src\Building.py	/^    def clone(self):$/;"	m	class:Building
+clone	.\ReAntics\src\Construction.py	/^    def clone(self):$/;"	m	class:Construction
+clone	.\ReAntics\src\GameState.py	/^    def clone(self):$/;"	m	class:GameState
+clone	.\ReAntics\src\Inventory.py	/^    def clone(self):$/;"	m	class:Inventory
+clone	.\ReAntics\src\Location.py	/^    def clone(self):$/;"	m	class:Location
+cnst	.\ReAntics\src\SettingsPane.py	/^import Constants as cnst$/;"	i
+compileAIs	.\ReAntics\src\MakeDistributable.py	/^def compileAIs():$/;"	f
+condWait	.\ReAntics\src\Game.py	/^    def condWait(self):$/;"	m	class:Game
+construct_path	.\ReAntics\src\AIPlayerUtils.py	/^def construct_path(node, antMovement):$/;"	f
+continueClose	.\ReAntics\src\GUIHandler.py	/^    def continueClose(self):$/;"	m	class:GUIHandler
+coordLookup	.\ReAntics\src\GameState.py	/^    def coordLookup(self, coords, playerId):$/;"	m	class:GameState
+copy	.\ReAntics\src\Game.py	/^import copy$/;"	i
+copy	.\ReAntics\src\GameState.py	/^import copy$/;"	i
+copy	.\ReAntics\src\SettingsPane.py	/^    def copy ( self ) :$/;"	m	class:GameGUIData
+copy	.\ReAntics\src\SettingsPane.py	/^import copy$/;"	i
+copyDict	.\ReAntics\src\SettingsPane.py	/^    def copyDict ( self ) :$/;"	m	class:PauseConditionGUIData
+createAICopy	.\ReAntics\src\Game.py	/^    def createAICopy(self, player):$/;"	m	class:Game
+createFrames	.\ReAntics\src\GamePane.py	/^    def createFrames(self):$/;"	m	class:GamePane
+createFrames	.\ReAntics\src\SettingsPane.py	/^    def createFrames ( self ) :$/;"	m	class:GameSettingsFrame
+createPathToward	.\ReAntics\src\AIPlayerUtils.py	/^def createPathToward(currentState, sourceCoords, targetCoords, movement):$/;"	f
+currentInvState	.\ReAntics\src\AI\LearningV2.py	/^    currentInvState = None$/;"	v	class:AIPlayer
+currentState	.\ReAntics\src\AI\LearningV2.py	/^    currentState = None$/;"	v	class:AIPlayer
+datetime	.\ReAntics\src\GUIHandler.py	/^import datetime$/;"	i
+defenseMode	.\ReAntics\src\AI\shapeShifter.py	/^    def defenseMode(self, currentState):$/;"	m	class:AIPlayer
+deletePC	.\ReAntics\src\SettingsPane.py	/^    def deletePC ( self, pauseConditionGUIDataObj ) :$/;"	m	class:GameSettingsFrame
+deleteSingleGame	.\ReAntics\src\SettingsPane.py	/^    def deleteSingleGame ( self, gameGUIDataObj ) :$/;"	m	class:GameSettingsFrame
+depth	.\ReAntics\src\AI\LearningV2.py	/^    depth = 2$/;"	v	class:AIPlayer
+disable	.\ReAntics\src\RedoneWidgets.py	/^    def disable(self):$/;"	m	class:ColoredButton
+disableHumanButtons	.\ReAntics\src\GUIHandler.py	/^    def disableHumanButtons(self):$/;"	m	class:GUIHandler
+discount	.\ReAntics\src\AI\LearningV2.py	/^    discount = .9$/;"	v	class:AIPlayer
+division	.\ReAntics\src\AI\LearningV2.py	/^from __future__ import division$/;"	i
+dumpUtils	.\ReAntics\src\AI\LearningV2.py	/^    def dumpUtils(self):$/;"	m	class:AIPlayer
+enable	.\ReAntics\src\RedoneWidgets.py	/^    def enable(self):$/;"	m	class:ColoredButton
+enableAllButtons	.\ReAntics\src\GUIHandler.py	/^    def enableAllButtons(self):$/;"	m	class:GUIHandler
+endClient	.\ReAntics\src\Game.py	/^    def endClient(self):$/;"	m	class:Game
+endTurnPressed	.\ReAntics\src\GamePane.py	/^    def endTurnPressed(self, event=None):$/;"	m	class:GamePane
+epsilon	.\ReAntics\src\AI\LearningV2.py	/^    epsilon = None$/;"	v	class:AIPlayer
+epsilonFunc	.\ReAntics\src\AI\LearningV2.py	/^    def epsilonFunc(self, numGames):$/;"	m	class:AIPlayer
+error	.\ReAntics\src\Game.py	/^    def error(self, errorCode, info, player = None):$/;"	m	class:Game
+errorReport	.\ReAntics\src\Game.py	/^    def errorReport(self, msg):$/;"	m	class:Game
+exists	.\ReAntics\src\SettingsPane.py	/^from os.path import exists$/;"	i
+expandNode	.\ReAntics\src\AI\vargaspu21_schendel21.py	/^    def expandNode(self, node):$/;"	m	class:AIPlayer
+fastclone	.\ReAntics\src\AI\LearningV2.py	/^    def fastclone(self, theState):$/;"	m	class:AIPlayer
+fastclone	.\ReAntics\src\GameState.py	/^    def fastclone(self):$/;"	m	class:GameState
+findPathRecursive	.\ReAntics\src\AIPlayerUtils.py	/^def findPathRecursive(state, source, target, movement, ignoresGrass):$/;"	f
+flashButton	.\ReAntics\src\RedoneWidgets.py	/^    def flashButton(self):$/;"	m	class:ColoredButton
+flipBoard	.\ReAntics\src\GameState.py	/^    def flipBoard(self):$/;"	m	class:GameState
+functools	.\ReAntics\src\Game.py	/^import functools$/;"	i
+gameAdded	.\ReAntics\src\SettingsPane.py	/^    def gameAdded ( self, t = None, n = None, p = None, box_needed = True ) :$/;"	m	class:GameSettingsFrame
+gameStartRequested	.\ReAntics\src\Game.py	/^    def gameStartRequested(self):$/;"	m	class:Game
+gatherMode	.\ReAntics\src\AI\shapeShifter.py	/^    def gatherMode(self, currentState):$/;"	m	class:AIPlayer
+generalWake	.\ReAntics\src\Game.py	/^    def generalWake(self):$/;"	m	class:Game
+getAntAt	.\ReAntics\src\AIPlayerUtils.py	/^def getAntAt(state, coords) -> Ant:$/;"	f
+getAntList	.\ReAntics\src\AIPlayerUtils.py	/^def getAntList(currentState,$/;"	f
+getAntStats	.\ReAntics\src\InfoScraper.py	/^def getAntStats():$/;"	f
+getAnthill	.\ReAntics\src\Inventory.py	/^    def getAnthill(self):$/;"	m	class:Inventory
+getAttack	.\ReAntics\src\AI\Booger.py	/^    def getAttack(self, currentState, attackingAnt, enemyLocations):$/;"	m	class:AIPlayer
+getAttack	.\ReAntics\src\AI\BoogerTestTimeout.py	/^    def getAttack(self, currentState, attackingAnt, enemyLocations):$/;"	m	class:AIPlayer
+getAttack	.\ReAntics\src\AI\Complex Food Gatherer.py	/^    def getAttack(self, currentState, attackingAnt, enemyLocations):$/;"	m	class:AIPlayer
+getAttack	.\ReAntics\src\AI\DefensiveV1.py	/^    def getAttack(self, currentState, attackingAnt, enemyLocations):$/;"	m	class:AIPlayer
+getAttack	.\ReAntics\src\AI\ErrorHandlingStressTest.py	/^    def getAttack(self, currentState, attackingAnt, enemyLocations):$/;"	m	class:AIPlayer
+getAttack	.\ReAntics\src\AI\FoodGatherer.py	/^    def getAttack(self, currentState, attackingAnt, enemyLocations):$/;"	m	class:AIPlayer
+getAttack	.\ReAntics\src\AI\LearningV2.py	/^    def getAttack(self, currentState, attackingAnt, enemyLocations):$/;"	m	class:AIPlayer
+getAttack	.\ReAntics\src\AI\Nibble.py	/^    def getAttack(self, currentState, attackingAnt, enemyLocations):$/;"	m	class:AIPlayer
+getAttack	.\ReAntics\src\AI\Random.py	/^    def getAttack(self, currentState, attackingAnt, enemyLocations):$/;"	m	class:AIPlayer
+getAttack	.\ReAntics\src\AI\Soldier.py	/^    def getAttack(self, currentState, attackingAnt, enemyLocations):$/;"	m	class:AIPlayer
+getAttack	.\ReAntics\src\AI\Starve.py	/^    def getAttack(self, currentState, attackingAnt, enemyLocations):$/;"	m	class:AIPlayer
+getAttack	.\ReAntics\src\AI\Very Complex Food Gatherer.py	/^    def getAttack(self, currentState, attackingAnt, enemyLocations):$/;"	m	class:AIPlayer
+getAttack	.\ReAntics\src\AI\anthillAttackAI.py	/^    def getAttack(self, currentState, attackingAnt, enemyLocations):$/;"	m	class:AIPlayer
+getAttack	.\ReAntics\src\AI\rangedSoldierTestAI.py	/^    def getAttack(self, currentState, attackingAnt, enemyLocations):$/;"	m	class:AIPlayer
+getAttack	.\ReAntics\src\AI\shapeShifter.py	/^    def getAttack(self, currentState, attackingAnt, enemyLocations):$/;"	m	class:AIPlayer
+getAttack	.\ReAntics\src\AI\vargaspu21_schendel21.py	/^    def getAttack(self, currentState, attackingAnt, enemyLocations):$/;"	m	class:AIPlayer
+getAttack	.\ReAntics\src\HumanPlayer.py	/^    def getAttack(self, currentState, attackingAnt, enemyLocations):$/;"	m	class:HumanPlayer
+getAttack	.\ReAntics\src\Player.py	/^    def getAttack(self, currentState, attackingAnt, enemyLocations):$/;"	m	class:Player
+getBasicState	.\ReAntics\src\GameState.py	/^    def getBasicState():$/;"	m	class:GameState
+getBlankState	.\ReAntics\src\GameState.py	/^    def getBlankState():$/;"	m	class:GameState
+getConstrAt	.\ReAntics\src\AIPlayerUtils.py	/^def getConstrAt(state, coords):$/;"	f
+getConstrList	.\ReAntics\src\AIPlayerUtils.py	/^def getConstrList(currentState,$/;"	f
+getCurrPlayerFood	.\ReAntics\src\AIPlayerUtils.py	/^def getCurrPlayerFood(self, currentState):$/;"	f
+getCurrPlayerInventory	.\ReAntics\src\AIPlayerUtils.py	/^def getCurrPlayerInventory(currentState):$/;"	f
+getCurrPlayerQueen	.\ReAntics\src\AIPlayerUtils.py	/^def getCurrPlayerQueen(currentState):$/;"	f
+getEnemyInv	.\ReAntics\src\AIPlayerUtils.py	/^def getEnemyInv(self, currentState):$/;"	f
+getHotKeyInfo	.\ReAntics\src\InfoScraper.py	/^def getHotKeyInfo():$/;"	f
+getHumanAttack	.\ReAntics\src\GUIHandler.py	/^    def getHumanAttack(self, location):$/;"	m	class:GUIHandler
+getHumanMove	.\ReAntics\src\GUIHandler.py	/^    def getHumanMove(self, phase):$/;"	m	class:GUIHandler
+getMove	.\ReAntics\src\AI\Booger.py	/^    def getMove(self, currentState):$/;"	m	class:AIPlayer
+getMove	.\ReAntics\src\AI\BoogerTestTimeout.py	/^    def getMove(self, currentState):$/;"	m	class:AIPlayer
+getMove	.\ReAntics\src\AI\Complex Food Gatherer.py	/^    def getMove(self, currentState):$/;"	m	class:AIPlayer
+getMove	.\ReAntics\src\AI\DefensiveV1.py	/^    def getMove(self, currentState):$/;"	m	class:AIPlayer
+getMove	.\ReAntics\src\AI\ErrorHandlingStressTest.py	/^    def getMove(self, currentState):$/;"	m	class:AIPlayer
+getMove	.\ReAntics\src\AI\FoodGatherer.py	/^    def getMove(self, currentState):$/;"	m	class:AIPlayer
+getMove	.\ReAntics\src\AI\LearningV2.py	/^    def getMove(self, currentState):$/;"	m	class:AIPlayer
+getMove	.\ReAntics\src\AI\Nibble.py	/^    def getMove(self, currentState):$/;"	m	class:AIPlayer
+getMove	.\ReAntics\src\AI\Random.py	/^    def getMove(self, currentState):$/;"	m	class:AIPlayer
+getMove	.\ReAntics\src\AI\Soldier.py	/^    def getMove(self, currentState):$/;"	m	class:AIPlayer
+getMove	.\ReAntics\src\AI\Starve.py	/^    def getMove(self, currentState):$/;"	m	class:AIPlayer
+getMove	.\ReAntics\src\AI\Very Complex Food Gatherer.py	/^    def getMove(self, currentState):$/;"	m	class:AIPlayer
+getMove	.\ReAntics\src\AI\anthillAttackAI.py	/^    def getMove(self, currentState):$/;"	m	class:AIPlayer
+getMove	.\ReAntics\src\AI\rangedSoldierTestAI.py	/^    def getMove(self, currentState):$/;"	m	class:AIPlayer
+getMove	.\ReAntics\src\AI\shapeShifter.py	/^    def getMove(self, currentState):$/;"	m	class:AIPlayer
+getMove	.\ReAntics\src\AI\vargaspu21_schendel21.py	/^    def getMove(self, currentState):$/;"	m	class:AIPlayer
+getMove	.\ReAntics\src\HumanPlayer.py	/^    def getMove(self, currentState):$/;"	m	class:HumanPlayer
+getMove	.\ReAntics\src\Player.py	/^    def getMove(self, currentState):$/;"	m	class:Player
+getMoveCost	.\ReAntics\src\Location.py	/^    def getMoveCost(self):$/;"	m	class:Location
+getNextState	.\ReAntics\src\AIPlayerUtils.py	/^def getNextState(currentState, move):$/;"	f
+getNextStateAdversarial	.\ReAntics\src\AIPlayerUtils.py	/^def getNextStateAdversarial(currentState, move):$/;"	f
+getPCStr	.\ReAntics\src\SettingsPane.py	/^    def getPCStr ( self ) :$/;"	m	class:PauseConditionGUIData
+getPlacement	.\ReAntics\src\AI\Booger.py	/^    def getPlacement(self, currentState):$/;"	m	class:AIPlayer
+getPlacement	.\ReAntics\src\AI\BoogerTestTimeout.py	/^    def getPlacement(self, currentState):$/;"	m	class:AIPlayer
+getPlacement	.\ReAntics\src\AI\Complex Food Gatherer.py	/^    def getPlacement(self, currentState):$/;"	m	class:AIPlayer
+getPlacement	.\ReAntics\src\AI\DefensiveV1.py	/^    def getPlacement(self, currentState):$/;"	m	class:AIPlayer
+getPlacement	.\ReAntics\src\AI\ErrorHandlingStressTest.py	/^    def getPlacement(self, currentState):$/;"	m	class:AIPlayer
+getPlacement	.\ReAntics\src\AI\FoodGatherer.py	/^    def getPlacement(self, currentState):$/;"	m	class:AIPlayer
+getPlacement	.\ReAntics\src\AI\LearningV2.py	/^    def getPlacement(self, currentState):$/;"	m	class:AIPlayer
+getPlacement	.\ReAntics\src\AI\Nibble.py	/^    def getPlacement(self, currentState):$/;"	m	class:AIPlayer
+getPlacement	.\ReAntics\src\AI\Random.py	/^    def getPlacement(self, currentState):$/;"	m	class:AIPlayer
+getPlacement	.\ReAntics\src\AI\Soldier.py	/^    def getPlacement(self, currentState):$/;"	m	class:AIPlayer
+getPlacement	.\ReAntics\src\AI\Starve.py	/^    def getPlacement(self, currentState):$/;"	m	class:AIPlayer
+getPlacement	.\ReAntics\src\AI\Very Complex Food Gatherer.py	/^    def getPlacement(self, currentState):$/;"	m	class:AIPlayer
+getPlacement	.\ReAntics\src\AI\anthillAttackAI.py	/^    def getPlacement(self, currentState):$/;"	m	class:AIPlayer
+getPlacement	.\ReAntics\src\AI\rangedSoldierTestAI.py	/^    def getPlacement(self, currentState):$/;"	m	class:AIPlayer
+getPlacement	.\ReAntics\src\AI\shapeShifter.py	/^    def getPlacement(self, currentState):$/;"	m	class:AIPlayer
+getPlacement	.\ReAntics\src\AI\vargaspu21_schendel21.py	/^    def getPlacement(self, currentState):$/;"	m	class:AIPlayer
+getPlacement	.\ReAntics\src\HumanPlayer.py	/^    def getPlacement(self, currentState):$/;"	m	class:HumanPlayer
+getPlacement	.\ReAntics\src\Player.py	/^    def getPlacement(self, currentState):$/;"	m	class:Player
+getQueen	.\ReAntics\src\Inventory.py	/^    def getQueen(self):$/;"	m	class:Inventory
+getQueenMove	.\ReAntics\src\AI\DefensiveV1.py	/^    def getQueenMove(self, state):$/;"	m	class:AIPlayer
+getQueenMove	.\ReAntics\src\AI\Very Complex Food Gatherer.py	/^    def getQueenMove(self, state):$/;"	m	class:AIPlayer
+getQueenMove	.\ReAntics\src\AI\anthillAttackAI.py	/^    def getQueenMove(self, state):$/;"	m	class:AIPlayer
+getQueenMove	.\ReAntics\src\AI\shapeShifter.py	/^    def getQueenMove(self, state):$/;"	m	class:AIPlayer
+getTunnels	.\ReAntics\src\Inventory.py	/^    def getTunnels(self):$/;"	m	class:Inventory
+getWinner	.\ReAntics\src\AIPlayerUtils.py	/^def getWinner(currentState):$/;"	f
+get_move	.\ReAntics\src\Game.py	/^    def get_move(self, currentPlayer, theState):$/;"	m	class:Game
+get_num_games	.\ReAntics\src\SettingsPane.py	/^    def get_num_games ( self ) :$/;"	m	class:QuickStartFrame
+get_num_games	.\ReAntics\src\SettingsPane.py	/^    def get_num_games ( self ) :$/;"	m	class:RoundRobinFrame
+get_num_games	.\ReAntics\src\SettingsPane.py	/^    def get_num_games ( self ) :$/;"	m	class:SinglePlayerFrame
+get_num_games	.\ReAntics\src\SettingsPane.py	/^    def get_num_games ( self ) :$/;"	m	class:TwoPlayerFrame
+get_players	.\ReAntics\src\SettingsPane.py	/^    def get_players ( self ) :$/;"	m	class:QuickStartFrame
+get_players	.\ReAntics\src\SettingsPane.py	/^    def get_players ( self ) :$/;"	m	class:RoundRobinFrame
+get_players	.\ReAntics\src\SettingsPane.py	/^    def get_players ( self ) :$/;"	m	class:SinglePlayerFrame
+get_players	.\ReAntics\src\SettingsPane.py	/^    def get_players ( self ) :$/;"	m	class:TwoPlayerFrame
+giveGame	.\ReAntics\src\GamePane.py	/^    def giveGame(self, the_game):$/;"	m	class:GamePane
+giveGame	.\ReAntics\src\SettingsPane.py	/^    def giveGame ( self, the_game ) :$/;"	m	class:GameSettingsFrame
+goodbyePressed	.\ReAntics\Hello World.py	/^    def goodbyePressed(self):$/;"	m	class:HelloUI
+handleAttackMove	.\ReAntics\src\GamePane.py	/^    def handleAttackMove(self, x, y):$/;"	m	class:GamePane
+handleNormalMove	.\ReAntics\src\GamePane.py	/^    def handleNormalMove(self, x, y):$/;"	m	class:GamePane
+handleSetup1Move	.\ReAntics\src\GamePane.py	/^    def handleSetup1Move(self, x, y):$/;"	m	class:GamePane
+handleSetup2Move	.\ReAntics\src\GamePane.py	/^    def handleSetup2Move(self, x, y):$/;"	m	class:GamePane
+hasWon	.\ReAntics\src\Game.py	/^    def hasWon(self, playerId):$/;"	m	class:Game
+helloPressed	.\ReAntics\Hello World.py	/^    def helloPressed(self):$/;"	m	class:HelloUI
+heuristicStepsToGoal	.\ReAntics\src\AI\vargaspu21_schendel21.py	/^    def heuristicStepsToGoal(self, currentState):$/;"	m	class:AIPlayer
+highlightValidAttacks	.\ReAntics\src\GamePane.py	/^    def highlightValidAttacks(self, ant: Ant):$/;"	m	class:GamePane
+highlightValidMoves	.\ReAntics\src\GamePane.py	/^    def highlightValidMoves(self, location, moveLeft, queen = False, ignoresGrass = False):$/;"	m	class:GamePane
+hotKeyUndo	.\ReAntics\src\GUIHandler.py	/^    def hotKeyUndo(self, event=None):$/;"	m	class:GUIHandler
+importlib	.\ReAntics\src\Game.py	/^import importlib$/;"	i
+importlib	.\ReAntics\src\MakeDistributable.py	/^import importlib$/;"	i
+init	.\ReAntics\src\AI\LearningV2.py	/^    init = True$/;"	v	class:AIPlayer
+initUtils	.\ReAntics\src\AI\LearningV2.py	/^    def initUtils(self):$/;"	m	class:AIPlayer
+invertedConsolidatedState	.\ReAntics\src\AI\LearningV2.py	/^    def invertedConsolidatedState ( self ) :$/;"	m	class:ConsolidatedState
+isInEnemyTerritory	.\ReAntics\src\Game.py	/^    def isInEnemyTerritory(self, coord):$/;"	m	class:Game
+isInHomeTerritory	.\ReAntics\src\Game.py	/^    def isInHomeTerritory(self, coord):$/;"	m	class:Game
+isPathOkForQueen	.\ReAntics\src\AIPlayerUtils.py	/^def isPathOkForQueen(path):$/;"	f
+isValidAttack	.\ReAntics\src\Game.py	/^    def isValidAttack(self, attackingAnt, attackCoord):$/;"	m	class:Game
+isValidCoord	.\ReAntics\src\Game.py	/^    def isValidCoord(self, coord):$/;"	m	class:Game
+isValidMove	.\ReAntics\src\Game.py	/^    def isValidMove(self, move):$/;"	m	class:Game
+isValidPlacement	.\ReAntics\src\Game.py	/^    def isValidPlacement(self, items, targets):$/;"	m	class:Game
+is_box_needed	.\ReAntics\src\SettingsPane.py	/^    def is_box_needed ( self ) :$/;"	m	class:QuickStartFrame
+is_box_needed	.\ReAntics\src\SettingsPane.py	/^    def is_box_needed ( self ) :$/;"	m	class:RoundRobinFrame
+is_box_needed	.\ReAntics\src\SettingsPane.py	/^    def is_box_needed ( self ) :$/;"	m	class:SinglePlayerFrame
+is_box_needed	.\ReAntics\src\SettingsPane.py	/^    def is_box_needed ( self ) :$/;"	m	class:TwoPlayerFrame
+json	.\ReAntics\src\SettingsPane.py	/^import json$/;"	i
+kill	.\ReAntics\src\Game.py	/^    def kill(self):$/;"	m	class:Game
+killPressed	.\ReAntics\src\GUIHandler.py	/^    def killPressed(self):$/;"	m	class:GUIHandler
+lastInvState	.\ReAntics\src\AI\LearningV2.py	/^    lastInvState = None$/;"	v	class:AIPlayer
+lastState	.\ReAntics\src\AI\LearningV2.py	/^    lastState = None$/;"	v	class:AIPlayer
+layoutChanged	.\ReAntics\src\SettingsPane.py	/^    def layoutChanged ( self, option ) :$/;"	m	class:AdditionalSettingsOptionsFrame
+learningFunc	.\ReAntics\src\AI\LearningV2.py	/^    def learningFunc(self, numGames):$/;"	m	class:AIPlayer
+learningRate	.\ReAntics\src\AI\LearningV2.py	/^    learningRate = None$/;"	v	class:AIPlayer
+legalCoord	.\ReAntics\src\AIPlayerUtils.py	/^def legalCoord(coord):$/;"	f
+listAdjacent	.\ReAntics\src\AIPlayerUtils.py	/^def listAdjacent(coord):$/;"	f
+listAllBuildMoves	.\ReAntics\src\AIPlayerUtils.py	/^def listAllBuildMoves(currentState):$/;"	f
+listAllLegalMoves	.\ReAntics\src\AIPlayerUtils.py	/^def listAllLegalMoves(currentState):$/;"	f
+listAllMovementMoves	.\ReAntics\src\AIPlayerUtils.py	/^def listAllMovementMoves(currentState):$/;"	f
+listAllMovementPaths	.\ReAntics\src\AIPlayerUtils.py	/^def listAllMovementPaths(currentState, coords, movement, ignoresGrass = False):$/;"	f
+listAttackable	.\ReAntics\src\AIPlayerUtils.py	/^def listAttackable(coord, dist = 1):$/;"	f
+listReachableAdjacent	.\ReAntics\src\AIPlayerUtils.py	/^def listReachableAdjacent(state, coords, movement, ignoresGrass = False):$/;"	f
+loadAIs	.\ReAntics\src\Game.py	/^    def loadAIs(self):$/;"	m	class:Game
+loadSavedSettings	.\ReAntics\src\SettingsPane.py	/^    def loadSavedSettings ( self ) :$/;"	m	class:GameSettingsFrame
+loadSecret	.\ReAntics\src\GUIHandler.py	/^    def loadSecret(self, secret):$/;"	m	class:GUIHandler
+makeDistrib	.\ReAntics\src\MakeDistributable.py	/^def makeDistrib():$/;"	f
+makeWidgets	.\ReAntics\src\RedoneWidgets.py	/^    def makeWidgets(self):$/;"	m	class:StopWatch
+math	.\ReAntics\src\AI\LearningV2.py	/^import math$/;"	i
+math	.\ReAntics\src\Game.py	/^import os, re, sys, math, multiprocessing, time, random$/;"	i
+messagebox	.\ReAntics\src\RedoneWidgets.py	/^from tkinter import messagebox$/;"	i
+messagebox	.\ReAntics\src\SettingsPane.py	/^from tkinter import messagebox$/;"	i
+moveTypeToStr	.\ReAntics\src\Constants.py	/^def moveTypeToStr(type):$/;"	f
+multiprocessing	.\ReAntics\src\Game.py	/^import os, re, sys, math, multiprocessing, time, random$/;"	i
+neighbors	.\ReAntics\src\AIPlayerUtils.py	/^def neighbors(currentState, node, goal, ign_grass, antMovement):$/;"	f
+newSelection	.\ReAntics\src\SettingsPane.py	/^    def newSelection ( self, value, idx ) :$/;"	m	class:AddPauseOptionsFrame
+onClose	.\ReAntics\src\GUIHandler.py	/^    def onClose(self):$/;"	m	class:GUIHandler
+os	.\ReAntics\src\GUIHandler.py	/^import os$/;"	i
+os	.\ReAntics\src\Game.py	/^import os, re, sys, math, multiprocessing, time, random$/;"	i
+os	.\ReAntics\src\GamePane.py	/^import os$/;"	i
+os	.\ReAntics\src\MakeDistributable.py	/^import os$/;"	i
+os	.\ReAntics\src\StatsPane.py	/^import os$/;"	i
+partial	.\ReAntics\src\Game.py	/^from functools import partial$/;"	i
+partial	.\ReAntics\src\GamePane.py	/^from functools import partial$/;"	i
+partial	.\ReAntics\src\RedoneWidgets.py	/^from functools import partial$/;"	i
+partial	.\ReAntics\src\SettingsPane.py	/^from functools import partial$/;"	i
+pauseConditionAdded	.\ReAntics\src\SettingsPane.py	/^    def pauseConditionAdded ( self, c = None, p = None ) :$/;"	m	class:GameSettingsFrame
+pauseConditionReached	.\ReAntics\src\Game.py	/^    def pauseConditionReached(self):$/;"	m	class:Game
+pauseGame	.\ReAntics\src\Game.py	/^    def pauseGame(self):$/;"	m	class:Game
+pausePressed	.\ReAntics\src\GUIHandler.py	/^    def pausePressed(self, event=None):$/;"	m	class:GUIHandler
+pickle	.\ReAntics\src\AI\LearningV2.py	/^import pickle$/;"	i
+pickle	.\ReAntics\src\GUIHandler.py	/^import pickle$/;"	i
+platform	.\ReAntics\src\GUIHandler.py	/^from sys import platform$/;"	i
+platform	.\ReAntics\src\StatsPane.py	/^from sys import platform$/;"	i
+playerID	.\ReAntics\src\AI\LearningV2.py	/^    playerID = None$/;"	v	class:AIPlayer
+postProcessCommandLine	.\ReAntics\src\Game.py	/^    def postProcessCommandLine(self):$/;"	m	class:Game
+post_process_settings	.\ReAntics\src\Game.py	/^    def post_process_settings(self):$/;"	m	class:Game
+pressed	.\ReAntics\src\GamePane.py	/^    def pressed(self, event):$/;"	m	class:BoardButton
+pressed	.\ReAntics\src\RedoneWidgets.py	/^    def pressed(self, thing):$/;"	m	class:ColoredButton
+printTournament	.\ReAntics\src\Game.py	/^    def printTournament(self):$/;"	m	class:Game
+printable	.\ReAntics\src\InfoScraper.py	/^from string import printable$/;"	i
+processCommandLine	.\ReAntics\src\Game.py	/^    def processCommandLine(self):$/;"	m	class:Game
+process_settings	.\ReAntics\src\Game.py	/^    def process_settings(self, games, additional, pauseConditions, testing = False):$/;"	m	class:Game
+random	.\ReAntics\src\AIPlayerUtils.py	/^import random$/;"	i
+random	.\ReAntics\src\AI\Booger.py	/^import random$/;"	i
+random	.\ReAntics\src\AI\BoogerTestTimeout.py	/^import random$/;"	i
+random	.\ReAntics\src\AI\Complex Food Gatherer.py	/^import random$/;"	i
+random	.\ReAntics\src\AI\ErrorHandlingStressTest.py	/^import random$/;"	i
+random	.\ReAntics\src\AI\FoodGatherer.py	/^import random$/;"	i
+random	.\ReAntics\src\AI\Nibble.py	/^import random$/;"	i
+random	.\ReAntics\src\AI\Random.py	/^import random$/;"	i
+random	.\ReAntics\src\AI\Soldier.py	/^import random$/;"	i
+random	.\ReAntics\src\AI\Starve.py	/^import random$/;"	i
+random	.\ReAntics\src\AI\Very Complex Food Gatherer.py	/^import random$/;"	i
+random	.\ReAntics\src\AI\anthillAttackAI.py	/^import random$/;"	i
+random	.\ReAntics\src\AI\rangedSoldierTestAI.py	/^import random$/;"	i
+random	.\ReAntics\src\AI\shapeShifter.py	/^import random$/;"	i
+random	.\ReAntics\src\AI\vargaspu21_schendel21.py	/^import random$/;"	i
+random	.\ReAntics\src\Game.py	/^import os, re, sys, math, multiprocessing, time, random$/;"	i
+random	.\ReAntics\src\GamePane.py	/^import random$/;"	i
+random	.\ReAntics\src\StatsPane.py	/^import random$/;"	i
+randomBoard	.\ReAntics\src\GamePane.py	/^    def randomBoard(self):$/;"	m	class:GamePane
+rangedNotOK	.\ReAntics\src\AI\LearningV2.py	/^    rangedNotOK = None$/;"	v	class:AIPlayer
+re	.\ReAntics\src\GUIHandler.py	/^import re$/;"	i
+re	.\ReAntics\src\Game.py	/^import os, re, sys, math, multiprocessing, time, random$/;"	i
+re	.\ReAntics\src\InfoScraper.py	/^import re$/;"	i
+re	.\ReAntics\src\SettingsPane.py	/^import re$/;"	i
+reDraw	.\ReAntics\src\GamePane.py	/^    def reDraw(self):$/;"	m	class:BoardButton
+reDrawBoard	.\ReAntics\src\GUIHandler.py	/^    def reDrawBoard(self):$/;"	m	class:GUIHandler
+regGPressed	.\ReAntics\src\GUIHandler.py	/^    def regGPressed(self, event = None):$/;"	m	class:GUIHandler
+registerWin	.\ReAntics\src\AI\Booger.py	/^    def registerWin(self, hasWon):$/;"	m	class:AIPlayer
+registerWin	.\ReAntics\src\AI\BoogerTestTimeout.py	/^    def registerWin(self, hasWon):$/;"	m	class:AIPlayer
+registerWin	.\ReAntics\src\AI\Complex Food Gatherer.py	/^    def registerWin(self, hasWon):$/;"	m	class:AIPlayer
+registerWin	.\ReAntics\src\AI\DefensiveV1.py	/^    def registerWin(self, hasWon):$/;"	m	class:AIPlayer
+registerWin	.\ReAntics\src\AI\ErrorHandlingStressTest.py	/^    def registerWin(self, hasWon):$/;"	m	class:AIPlayer
+registerWin	.\ReAntics\src\AI\FoodGatherer.py	/^    def registerWin(self, hasWon):$/;"	m	class:AIPlayer
+registerWin	.\ReAntics\src\AI\LearningV2.py	/^    def registerWin(self, hasWon):$/;"	m	class:AIPlayer
+registerWin	.\ReAntics\src\AI\Nibble.py	/^    def registerWin(self, hasWon):$/;"	m	class:AIPlayer
+registerWin	.\ReAntics\src\AI\Random.py	/^    def registerWin(self, hasWon):$/;"	m	class:AIPlayer
+registerWin	.\ReAntics\src\AI\Soldier.py	/^    def registerWin(self, hasWon):$/;"	m	class:AIPlayer
+registerWin	.\ReAntics\src\AI\Starve.py	/^    def registerWin(self, hasWon):$/;"	m	class:AIPlayer
+registerWin	.\ReAntics\src\AI\Very Complex Food Gatherer.py	/^    def registerWin(self, hasWon):$/;"	m	class:AIPlayer
+registerWin	.\ReAntics\src\AI\anthillAttackAI.py	/^    def registerWin(self, hasWon):$/;"	m	class:AIPlayer
+registerWin	.\ReAntics\src\AI\rangedSoldierTestAI.py	/^    def registerWin(self, hasWon):$/;"	m	class:AIPlayer
+registerWin	.\ReAntics\src\AI\shapeShifter.py	/^    def registerWin(self, hasWon):$/;"	m	class:AIPlayer
+registerWin	.\ReAntics\src\AI\vargaspu21_schendel21.py	/^    def registerWin(self, hasWon):$/;"	m	class:AIPlayer
+registerWin	.\ReAntics\src\Player.py	/^    def registerWin(self, hasWon):$/;"	m	class:Player
+release	.\ReAntics\src\AI\LearningV2.py	/^    release = False  # Disables learning for release version$/;"	v	class:AIPlayer
+relevantPlayers	.\ReAntics\src\Game.py	/^    def relevantPlayers(self, players):$/;"	m	class:Game
+reloadAgentPressed	.\ReAntics\src\GUIHandler.py	/^    def reloadAgentPressed(self):$/;"	m	class:GUIHandler
+resetSettings	.\ReAntics\src\SettingsPane.py	/^    def resetSettings ( self ):$/;"	m	class:GameSettingsFrame
+resolveAttack	.\ReAntics\src\Game.py	/^    def resolveAttack(self, attackingAnt, currentPlayer):$/;"	m	class:Game
+resolveEndGame	.\ReAntics\src\Game.py	/^    def resolveEndGame(self):$/;"	m	class:Game
+restart	.\ReAntics\src\Game.py	/^    def restart(self):$/;"	m	class:Game
+restartFromEnd	.\ReAntics\src\Game.py	/^    def restartFromEnd(self):$/;"	m	class:Game
+restartPressed	.\ReAntics\src\GUIHandler.py	/^    def restartPressed(self):$/;"	m	class:GUIHandler
+runGame	.\ReAntics\src\Game.py	/^    def runGame(self):$/;"	m	class:Game
+saveSettings	.\ReAntics\src\SettingsPane.py	/^    def saveSettings ( self ):$/;"	m	class:GameSettingsFrame
+searchMove	.\ReAntics\src\AI\LearningV2.py	/^    def searchMove(self, currentState, depthLevel, alpha, beta):$/;"	m	class:AIPlayer
+secret2Pressed	.\ReAntics\src\GUIHandler.py	/^    def secret2Pressed(self, event = None):$/;"	m	class:GUIHandler
+secretPressed	.\ReAntics\src\GUIHandler.py	/^    def secretPressed(self, event = None):$/;"	m	class:GUIHandler
+selectAllPlayers	.\ReAntics\src\SettingsPane.py	/^    def selectAllPlayers ( self ) :$/;"	m	class:QuickStartFrame
+selectAllPlayers	.\ReAntics\src\SettingsPane.py	/^    def selectAllPlayers ( self ) :$/;"	m	class:RoundRobinFrame
+setCurLogItemOver	.\ReAntics\src\StatsPane.py	/^    def setCurLogItemOver(self):$/;"	m	class:StatsPane
+setImage	.\ReAntics\src\GamePane.py	/^    def setImage(self, construct = -9, ant = -9, antTeam = -9, constTeam = -9, moved = -9, health = -9, highlight = -9, attackHighlight = -9, carrying = -9, healthConst = -9):$/;"	m	class:BoardButton
+setInstructionText	.\ReAntics\src\GamePane.py	/^    def setInstructionText(self, text: str):$/;"	m	class:GamePane
+setPlayers	.\ReAntics\src\GUIHandler.py	/^    def setPlayers(self, p1, p2):$/;"	m	class:GUIHandler
+setScoreRecord	.\ReAntics\src\StatsPane.py	/^    def setScoreRecord ( self, s ) :$/;"	m	class:StatsPane
+setSeasonalGraphics	.\ReAntics\src\GUIHandler.py	/^    def setSeasonalGraphics(self, event = None):$/;"	m	class:GUIHandler
+setTextLines	.\ReAntics\src\SettingsPane.py	/^    def setTextLines ( self, textArray ) :$/;"	m	class:BlueBox
+setTextLines	.\ReAntics\src\StatsPane.py	/^    def setTextLines ( self, textArray ) :$/;"	m	class:PurpleBox
+setToGameState	.\ReAntics\src\GamePane.py	/^    def setToGameState(self, state: GameState):$/;"	m	class:GamePane
+setTopText	.\ReAntics\src\SettingsPane.py	/^    def setTopText ( self, txt ) :$/;"	m	class:BlueBox
+setWinner	.\ReAntics\src\Game.py	/^    def setWinner(self, id):$/;"	m	class:Game
+set_scrollregion	.\ReAntics\src\RedoneWidgets.py	/^    def set_scrollregion(self, event=None, vertical_buff = 0):$/;"	m	class:ScrollableFrame
+settingsPressed	.\ReAntics\src\GUIHandler.py	/^    def settingsPressed(self):$/;"	m	class:GUIHandler
+setup	.\ReAntics\src\Game.py	/^    def setup(self, game, count):$/;"	m	class:Game
+showFrame	.\ReAntics\src\GUIHandler.py	/^    def showFrame(self, frameNum):$/;"	m	class:GUIHandler
+showSetupConstructions	.\ReAntics\src\GamePane.py	/^    def showSetupConstructions(self, phase):$/;"	m	class:GamePane
+showState	.\ReAntics\src\GUIHandler.py	/^    def showState(self, state):$/;"	m	class:GUIHandler
+shutil	.\ReAntics\src\MakeDistributable.py	/^import shutil$/;"	i
+sortAttr	.\ReAntics\src\AI\vargaspu21_schendel21.py	/^    def sortAttr(self, node):$/;"	m	class:AIPlayer
+start	.\ReAntics\src\Game.py	/^    def start(self):$/;"	m	class:Game
+startAIvsAI	.\ReAntics\src\Game.py	/^    def startAIvsAI(self, numGames, player1, player2):$/;"	m	class:Game
+startAllOther	.\ReAntics\src\Game.py	/^    def startAllOther(self, numGames, playerOne):$/;"	m	class:Game
+startCurLogItem	.\ReAntics\src\StatsPane.py	/^    def startCurLogItem(self):$/;"	m	class:StatsPane
+startHumanVsAI	.\ReAntics\src\Game.py	/^    def startHumanVsAI(self, givenPlayer):$/;"	m	class:Game
+startRR	.\ReAntics\src\Game.py	/^    def startRR(self, numGames, givenPlayers):$/;"	m	class:Game
+startRRall	.\ReAntics\src\Game.py	/^    def startRRall(self, numGames):$/;"	m	class:Game
+startSelf	.\ReAntics\src\Game.py	/^    def startSelf(self, numGames, playerOne):$/;"	m	class:Game
+starveMode	.\ReAntics\src\AI\shapeShifter.py	/^    def starveMode(self, currentState):$/;"	m	class:AIPlayer
+statsPressed	.\ReAntics\src\GUIHandler.py	/^    def statsPressed(self):$/;"	m	class:GUIHandler
+stepPressed	.\ReAntics\src\GUIHandler.py	/^    def stepPressed(self, event=None):$/;"	m	class:GUIHandler
+stepsToReach	.\ReAntics\src\AIPlayerUtils.py	/^def stepsToReach(currentState, src, dst):$/;"	f
+stopCurLogItem	.\ReAntics\src\StatsPane.py	/^    def stopCurLogItem(self, game_over = False):$/;"	m	class:StatsPane
+submitHumanAttack	.\ReAntics\src\GUIHandler.py	/^    def submitHumanAttack(self, attack):$/;"	m	class:GUIHandler
+submitHumanAttack	.\ReAntics\src\Game.py	/^    def submitHumanAttack(self, attack):$/;"	m	class:Game
+submitHumanMove	.\ReAntics\src\GUIHandler.py	/^    def submitHumanMove(self, move):$/;"	m	class:GUIHandler
+submitHumanMove	.\ReAntics\src\Game.py	/^    def submitHumanMove(self, move):$/;"	m	class:Game
+submitHumanSetup	.\ReAntics\src\GUIHandler.py	/^    def submitHumanSetup(self, locations):$/;"	m	class:GUIHandler
+submitHumanSetup	.\ReAntics\src\Game.py	/^    def submitHumanSetup(self, locations):$/;"	m	class:Game
+subtractCoords	.\ReAntics\src\GameState.py	/^def subtractCoords(tuple1, tuple2):$/;"	f
+sys	.\ReAntics\src\AI\Booger.py	/^import sys$/;"	i
+sys	.\ReAntics\src\AI\BoogerTestTimeout.py	/^import sys$/;"	i
+sys	.\ReAntics\src\AI\Complex Food Gatherer.py	/^import sys$/;"	i
+sys	.\ReAntics\src\AI\DefensiveV1.py	/^import sys$/;"	i
+sys	.\ReAntics\src\AI\ErrorHandlingStressTest.py	/^import sys$/;"	i
+sys	.\ReAntics\src\AI\FoodGatherer.py	/^import sys$/;"	i
+sys	.\ReAntics\src\AI\LearningV2.py	/^import sys$/;"	i
+sys	.\ReAntics\src\AI\Nibble.py	/^import sys$/;"	i
+sys	.\ReAntics\src\AI\Random.py	/^import sys$/;"	i
+sys	.\ReAntics\src\AI\Soldier.py	/^import sys$/;"	i
+sys	.\ReAntics\src\AI\Starve.py	/^import sys$/;"	i
+sys	.\ReAntics\src\AI\Very Complex Food Gatherer.py	/^import sys$/;"	i
+sys	.\ReAntics\src\AI\anthillAttackAI.py	/^import sys$/;"	i
+sys	.\ReAntics\src\AI\rangedSoldierTestAI.py	/^import sys$/;"	i
+sys	.\ReAntics\src\AI\shapeShifter.py	/^import sys$/;"	i
+sys	.\ReAntics\src\AI\vargaspu21_schendel21.py	/^import sys$/;"	i
+sys	.\ReAntics\src\Game.py	/^import os, re, sys, math, multiprocessing, time, random$/;"	i
+sys	.\ReAntics\src\MakeDistributable.py	/^import sys$/;"	i
+testPlacement	.\ReAntics\src\AI\LearningV2.py	/^    testPlacement = False  # Used to test enclosed hill$/;"	v	class:AIPlayer
+threading	.\ReAntics\src\Game.py	/^import threading$/;"	i
+threading	.\ReAntics\src\SettingsPane.py	/^import threading$/;"	i
+time	.\ReAntics\src\AI\BoogerTestTimeout.py	/^import time$/;"	i
+time	.\ReAntics\src\Game.py	/^import os, re, sys, math, multiprocessing, time, random$/;"	i
+time	.\ReAntics\src\Game.py	/^import time$/;"	i
+time	.\ReAntics\src\RedoneWidgets.py	/^import time$/;"	i
+time	.\ReAntics\src\SettingsPane.py	/^import time$/;"	i
+time	.\ReAntics\src\StatsPane.py	/^import time$/;"	i
+timeChanged	.\ReAntics\src\SettingsPane.py	/^    def timeChanged ( self, sv  ) :$/;"	m	class:AdditionalSettingsOptionsFrame
+tk	.\ReAntics\Hello World.py	/^import tkinter as tk$/;"	i
+tk	.\ReAntics\src\RedoneWidgets.py	/^import tkinter as tk$/;"	i
+tk	.\ReAntics\src\SettingsPane.py	/^import tkinter as tk$/;"	i
+tkinter	.\ReAntics\src\GUIHandler.py	/^import tkinter$/;"	i
+tkinter	.\ReAntics\src\GamePane.py	/^import tkinter$/;"	i
+tkinter	.\ReAntics\src\StatsPane.py	/^import tkinter$/;"	i
+tournamentStr	.\ReAntics\src\Game.py	/^    def tournamentStr(self, current=True):$/;"	m	class:Game
+traceback	.\ReAntics\src\Game.py	/^import traceback$/;"	i
+training	.\ReAntics\src\AI\LearningV2.py	/^    training = False  # Used to train against itself (adding new values against new bot)$/;"	v	class:AIPlayer
+truncateName	.\ReAntics\src\Game.py	/^    def truncateName(self, name, size = 11):$/;"	m	class:Game
+ttk	.\ReAntics\src\RedoneWidgets.py	/^from tkinter import ttk$/;"	i
+ttk	.\ReAntics\src\SettingsPane.py	/^from tkinter import ttk$/;"	i
+undoPressed	.\ReAntics\src\GamePane.py	/^    def undoPressed(self):$/;"	m	class:GamePane
+updateCurLogItem	.\ReAntics\src\StatsPane.py	/^    def updateCurLogItem(self, s):$/;"	m	class:StatsPane
+updateNextAnt	.\ReAntics\src\AI\Complex Food Gatherer.py	/^    def updateNextAnt(self):$/;"	m	class:AntPathCycle
+updateNextAnt	.\ReAntics\src\AI\DefensiveV1.py	/^    def updateNextAnt(self):$/;"	m	class:AntPathCycle
+updateNextAnt	.\ReAntics\src\AI\Nibble.py	/^    def updateNextAnt(self):$/;"	m	class:AntPathCycle
+updateNextAnt	.\ReAntics\src\AI\Soldier.py	/^    def updateNextAnt(self):$/;"	m	class:AntPathCycle
+updateNextAnt	.\ReAntics\src\AI\Starve.py	/^    def updateNextAnt(self):$/;"	m	class:AntPathCycle
+updateNextAnt	.\ReAntics\src\AI\Very Complex Food Gatherer.py	/^    def updateNextAnt(self):$/;"	m	class:AntPathCycle
+updateNextAnt	.\ReAntics\src\AI\anthillAttackAI.py	/^    def updateNextAnt(self):$/;"	m	class:AntPathCycle
+updateNextAnt	.\ReAntics\src\AI\shapeShifter.py	/^    def updateNextAnt(self):$/;"	m	class:AntPathCycle
+updateState	.\ReAntics\src\AI\Complex Food Gatherer.py	/^    def updateState(self, newState):$/;"	m	class:AntPathCycle
+updateState	.\ReAntics\src\AI\DefensiveV1.py	/^    def updateState(self, newState):$/;"	m	class:AntPathCycle
+updateState	.\ReAntics\src\AI\Nibble.py	/^    def updateState(self, newState):$/;"	m	class:AntPathCycle
+updateState	.\ReAntics\src\AI\Soldier.py	/^    def updateState(self, newState):$/;"	m	class:AntPathCycle
+updateState	.\ReAntics\src\AI\Starve.py	/^    def updateState(self, newState):$/;"	m	class:AntPathCycle
+updateState	.\ReAntics\src\AI\Very Complex Food Gatherer.py	/^    def updateState(self, newState):$/;"	m	class:AntPathCycle
+updateState	.\ReAntics\src\AI\anthillAttackAI.py	/^    def updateState(self, newState):$/;"	m	class:AntPathCycle
+updateState	.\ReAntics\src\AI\shapeShifter.py	/^    def updateState(self, newState):$/;"	m	class:AntPathCycle
+updateUtils	.\ReAntics\src\AI\LearningV2.py	/^    def updateUtils(self, endGame=False, hasWon=False):$/;"	m	class:AIPlayer
+utilTable	.\ReAntics\src\AI\LearningV2.py	/^    utilTable = None$/;"	v	class:AIPlayer
+visitedCoords	.\ReAntics\src\AI\LearningV2.py	/^    visitedCoords = []$/;"	v	class:AIPlayer
+wgt	.\ReAntics\src\GamePane.py	/^import RedoneWidgets as wgt$/;"	i
+wgt	.\ReAntics\src\SettingsPane.py	/^import RedoneWidgets as wgt$/;"	i
+wgt	.\ReAntics\src\StatsPane.py	/^import RedoneWidgets as wgt$/;"	i
+winState	.\ReAntics\src\AI\LearningV2.py	/^    def winState(self, theState):$/;"	m	class:AIPlayer
