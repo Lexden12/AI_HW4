@@ -318,8 +318,10 @@ class AIPlayer(Player):
     #   currentState - A clone of the current state (GameState)
     #                 This will assumed to be a fast clone of the state
     #                 i.e. the board will not be needed/used
+    #   gene         - A clone of the gene (a list of weights) that will be
+    #                 used to calculate the score of the current state
     ##
-    def utility(self, currentState):
+    def utility(self, currentState, gene):
       me = currentState.whoseTurn
       enemy = abs(me - 1)
       myInv = getCurrPlayerInventory(currentState)
@@ -338,15 +340,61 @@ class AIPlayer(Player):
       foods = getConstrList(currentState, None, (FOOD,))
 
       myWorkers = getAntList(currentState, me, (WORKER,))
-      myOffense = getAntList(currentState, me, (SOLDIER,))
+      myOffense = getAntList(currentState, me, (SOLDIER, DRONE))
       enemyWorkers = getAntList(currentState, enemy, (WORKER,))
-      enemyOffense = getAntList(currentState, enemy, (SOLDIER, R_SOLDIER))
-      enemyDrones = getAntList(currentState, enemy, (DRONE,))
+      enemyOffense = getAntList(currentState, enemy, (SOLDIER, DRONE, R_SOLDIER))
 
-      myScore = 0
-      enemyScore = 0
-
-      
+      score = 0
+      score += (myFood - enemyFood) * gene[0]#0: difference in food
+      score += (myQueen.health - enemyQueen.health) * gene[1]#1: difference in queen health
+      score += (myHill.captureHealth - enemyHill.captureHealth) * gene[2]#2: difference in anthill health
+      score += gene[4] if len(myWorkers) == 2 else 0#4: on/off based on two workers
+      #3: average distance from worker to target
+      #10: average distance between workers and queen
+      tempScore = 0
+      totalDist = 0
+      for worker in myWorkers:
+        totalDist += approxDist(worker.coords, myQueen.coords)
+        if worker.carrying: # if carrying go to hill/tunnel
+          tempScore += 2
+          distanceToTunnel = approxDist(worker.coords, tunnel.coords)
+          distanceToHill = approxDist(worker.coords, hill.coords)
+          dist = min(distanceToHill, distanceToTunnel)
+          if dist <= 3:
+            tempScore += 1
+        else: # if not carrying go to food
+          dist = 100
+          for food in foods:
+            temp = approxDist(worker.coords, food.coords)
+            if temp < dist:
+              dist = temp
+          if dist <= 3:
+            tempScore += 1
+      score += tempScore * gene[3]
+      score += (totalDist/len(myWorkers)) * gene[10]
+      #5: average distance from our offense to enemy queen
+      #6: average distance from our offense to the first enemy worker
+      #7: average distance from our offense to enemy anthill
+      queenDist = 0
+      workerDist = 0
+      anthillDist = 0
+      for ant in myOffense:
+        queenDist += approxDist(ant.coords, enemyQueen.coords)
+        workerDist += approxDist(ant.coords, enemyWorkers[0].coords)
+        anthillDist += approxDist(ant.coords, enemyHill.coords)
+      score += (queenDist/len(myOffense)) * gene[5]
+      score += (workerDist/len(myOffense)) * gene[6]
+      score += (anthillDist/len(myOffense)) * gene[7]
+      #8: average distance from enemy offense to our queen
+      #9: average distance from enemy offense to our anthill
+      queenDist = 0
+      anthillDist = 0
+      for ant in enemyOffense:
+        queenDist += approxDist(ant.coords, myQueen.coords)
+        anthillDist += approxDist(ant.coords, myHill.coords)
+      score += (queenDist/len(enemyOffense)) * gene[8]
+      score += (anthillDist/len(enemyOffense)) * gene[9]
+      score += approxDist(myQueen.coords, enemyQueen.coords) * gene[11]#11: distance between queens
       
       if me is not self.me:
         print("I am not me")
@@ -398,18 +446,3 @@ class Node:
 
   def setTurn(self, turn):
     self.turn = turn
-
-class Gene:
-  def __init__(self, food, qHealth, workerTarget, twoWorkers, offenseQueen, offenseWorker, offenseAnthill, queenThreats, anthillThreats, rangedSoldier, workerQueen, queenDist):
-    self.food = food
-    self.qHealth = qHealth
-    self.workerTarget = workerTarget
-    self.twoWorkers = twoWorkers
-    self.offenseQueen = offenseQueen
-    self.offenseWorker = offenseWorker
-    self.offenseAnthill = offenseAnthill
-    self.queenThreats = queenThreats
-    self.anthillThreats = anthillThreats
-    self.rangedSoldier = rangedSoldier
-    self.workerQueen = workerQueen
-    self.queenDist = queenDist
