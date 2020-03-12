@@ -300,12 +300,14 @@ class AIPlayer(Player):
     ##
     #registerWin
     #
-    # This agent doens't learn
+    # This agent doesn't learn
     #
     def registerWin(self, hasWon):
-        #method templaste, not implemented
-        pass
+        
 
+
+    def evaluateFitness(self, gene):
+      
     ##
     #heuristicStepsToGoal
     #Description: Gets the expected value of a state
