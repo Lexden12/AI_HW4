@@ -27,7 +27,6 @@ class AIPlayer(Player):
     #Parameters:
     #   inputPlayerId - The id to give the new player (int)
     #   cpy           - whether the player is a copy (when playing itself)
-    ##
     def __init__(self, inputPlayerId):
         super(AIPlayer, self).__init__(inputPlayerId, "Minimax_Learner")
         self.root = None
@@ -36,9 +35,13 @@ class AIPlayer(Player):
         self.population = []
         self.index = 0
         self.fitness = []
-        self.fileName = "./schendel21_holbrook20_population.txt"
-        self.mutationChance = 0.05
-        self.mutationRange = 1.0
+        self.fileName = "AI\schendel21_holbrook20_population.txt"
+        self.mutationChance = 0.1
+        self.mutationRange = 5.0
+        self.gameCount = 0 #number of games we have played with this gene
+        self.maxGames = 10 #number of games we will play with each gene
+        self.gen = 0 #Current generation number
+        self.lastState = None #To save the last game state in case we win
         self.initPopulation()
 
     def init2(self):
@@ -49,30 +52,26 @@ class AIPlayer(Player):
       
     def initPopulation(self):
       try:
-        f = open(self.fileName, "r")
+        f = open(self.fileName.split('/')[1], "r")
         lines = f.readlines()
+        print("Reading existing gene file")
         for line in lines:
           tempGene = line.split(",")
-          if len(tempGene) is not 12:
+          if len(tempGene) != 12:
             raise ValueError
-          self.population.append(tempGene)
+          self.population.append(list(map(float, tempGene)))
         f.close()
       except:
+        print("No gene file found... Making random ones")
         for i in range(10):
           tempGene = []
           for j in range(12):
             tempGene.append(random.uniform(-10, 10))
           self.population.append(tempGene)
-      for i in range(10):
-        self.fitness.append(i)
-      
-      print ("Gen zero: {}".format(self.population))
-      self.nextGeneration()
-      print ("Kids: {}".format(self.population))
+      for i in range(len(self.population)):
+        self.fitness.append(0)
 
     def matePopulation(self, mom, dad):
-       print("Mom: {}".format(mom))
-       print(dad)
        splitIndex = random.randint(0,12)
        childOne, childTwo= [], []
        childOne.extend(mom[slice(splitIndex)])
@@ -84,14 +83,12 @@ class AIPlayer(Player):
        for index, weight in enumerate(childOne):
         mutateFlag = random.uniform(0, 1)
         if mutateFlag <= self.mutationChance:
-          print("mutation in child one")
           mutationDegree = random.uniform(-self.mutationRange, self.mutationRange)
           childOne[index] += mutationDegree
        
        for index, weight in enumerate(childTwo):
         mutateFlag = random.uniform(0, 1)
         if mutateFlag <= self.mutationChance:
-          print("mutation in child two")
           mutationDegree = random.uniform(-self.mutationRange, self.mutationRange)
           childOne[index] += mutationDegree
           
@@ -100,7 +97,7 @@ class AIPlayer(Player):
     def nextGeneration(self):
       total = sum(self.fitness)
       newPopulation = []
-      for i in range(5):
+      for i in range(len(self.population)//2):
         mom = None
         dad = None
         for j in range(2):
@@ -108,17 +105,30 @@ class AIPlayer(Player):
           totalScore = 0
           for index, score in enumerate(self.fitness):
             if totalScore <= selectedGeneIndex and selectedGeneIndex <= (totalScore + score):
-              if j is 0:
+              if j == 0:
                 mom = self.population[index]
-              elif j is 1:
+              elif j == 1:
                 dad = self.population[index]
               else:
                 print("Invalid Index! {}".format(j))
               break
             totalScore += score
         newPopulation.extend(self.matePopulation(mom, dad))
-      self.population = newPopulation
+      self.population = newPopulation.copy()
+      self.save()
       
+    def save(self):
+      f = open('schendel21_holbrook20_population.txt', "w")
+      for gene in self.population:
+        print(gene)
+        for j, weight in enumerate(gene):
+          f.write(str(weight))
+          if j != len(gene) - 1:
+            f.write(',')
+          else:
+            f.write('\n')
+      print("Saved generation")
+      f.close()
       
     ##
     #getPlacement
@@ -136,7 +146,7 @@ class AIPlayer(Player):
     ##
     def getPlacement(self, currentState):
         if currentState.phase == SETUP_PHASE_1:
-            return [(3, 2), (7, 2), (0, 0), (1, 0), (2, 0), (3, 0), (4, 0), (5, 0), (6, 0), (8, 0), (9, 0)]
+            return [(3, 1), (7, 1), (0, 3), (1, 3), (2, 3), (3, 3), (4, 3), (5, 3), (6, 3), (8, 3), (9, 3)]
         elif currentState.phase == SETUP_PHASE_2:  # stuff on foe's side
             numToPlace = 2
             moves = []
@@ -167,6 +177,7 @@ class AIPlayer(Player):
     #Return: The Move to be made
     ##
     def getMove(self, currentState):
+        self.lastState = currentState
         self.me = currentState.whoseTurn
         if self.root is None:
           self.root = Node(None, currentState, 0, None, self.test)
@@ -226,7 +237,7 @@ class AIPlayer(Player):
         return
       if node.depth == 3:
         if not self.test:
-          node.score = self.utility(node.state)
+          node.score = self.utility(node.state, self.population[self.index])
         else:
           node.score = utilityMock()
         if node.parent is not None:
@@ -303,11 +314,54 @@ class AIPlayer(Player):
     # This agent doesn't learn
     #
     def registerWin(self, hasWon):
-        
+        # Need currentGene and numberOfGames variables
+        self.gameCount += 1
+        #Evaluate the fitness score of the current gene
+        self.fitness[self.index] += self.evaluateFitness(hasWon)
+       
+        #Judge whether the current gene's fitness has been fully evaluated, if so advance to the next gene
+        if(self.gameCount >= self.maxGames):
+          self.fitness[self.index] /= self.gameCount
+          self.index += 1
+          self.gameCount = 0
+         
+          # If all the genes have been full evaluated, create a new population using the fittest ones and reset the current index to the beginning
+          if (self.index > len(self.population) - 1):
+            self.gen += 1
+            print("Generation {} Fitnesses: {}".format(self.gen, self.fitness))
+            self.nextGeneration()
+            for i in range(len(self.fitness)):
+              self.fitness[i] = 0
+            self.index = 0
+       
 
-
-    def evaluateFitness(self, gene):
-      
+    def evaluateFitness(self, hasWon):
+      fitness = 0
+      if hasWon:
+        fitness += 5
+      else:
+        fitness -= 5
+      #use self.lastState to determine what happened in the game
+      me = self.me
+      enemy = abs(self.me - 1)
+      myInv = getCurrPlayerInventory(self.lastState)
+      myFood = myInv.foodCount
+      enemyInv = getEnemyInv(self, self.lastState)
+      enemyFood = enemyInv.foodCount
+      hills = getConstrList(self.lastState, types=(ANTHILL,))
+      myHill = hills[1] if (hills[0].coords[1] > 5) else hills[0]
+      enemyHill = hills[1] if (myHill is hills[0]) else hills[0]
+      myQueen = myInv.getQueen()
+      enemyQueen = enemyInv.getQueen()
+      #get important values for victory (food diff, health diffs)
+      foodDiff = myFood - enemyFood
+      qDiff = myQueen.health - enemyQueen.health
+      hillDiff = myHill.captureHealth - enemyHill.captureHealth
+      fitness += foodDiff
+      fitness += qDiff
+      fitness += (hillDiff // 0.3)
+      return max(fitness + 15, 0) #prevent negative fitnesses(breaks nextGen)
+ 
     ##
     #heuristicStepsToGoal
     #Description: Gets the expected value of a state
@@ -355,55 +409,53 @@ class AIPlayer(Player):
       #10: average distance between workers and queen
       tempScore = 0
       totalDist = 0
-      for worker in myWorkers:
-        totalDist += approxDist(worker.coords, myQueen.coords)
-        if worker.carrying: # if carrying go to hill/tunnel
-          tempScore += 2
-          distanceToTunnel = approxDist(worker.coords, tunnel.coords)
-          distanceToHill = approxDist(worker.coords, hill.coords)
-          dist = min(distanceToHill, distanceToTunnel)
-          if dist <= 3:
-            tempScore += 1
-        else: # if not carrying go to food
-          dist = 100
-          for food in foods:
-            temp = approxDist(worker.coords, food.coords)
-            if temp < dist:
-              dist = temp
-          if dist <= 3:
-            tempScore += 1
-      score += tempScore * gene[3]
-      score += (totalDist/len(myWorkers)) * gene[10]
+      if len(myWorkers) > 0:
+        for worker in myWorkers:
+          totalDist += approxDist(worker.coords, myQueen.coords)
+          if worker.carrying: # if carrying go to hill/tunnel
+            tempScore += 2
+            distanceToTunnel = approxDist(worker.coords, myTunnel.coords)
+            distanceToHill = approxDist(worker.coords, myHill.coords)
+            dist = min(distanceToHill, distanceToTunnel)
+            if dist <= 3:
+              tempScore += 1
+          else: # if not carrying go to food
+            dist = 100
+            for food in foods:
+              temp = approxDist(worker.coords, food.coords)
+              if temp < dist:
+                dist = temp
+            if dist <= 3:
+              tempScore += 1
+        score += tempScore * gene[3]
+        score += (totalDist/len(myWorkers)) * gene[10]
       #5: average distance from our offense to enemy queen
       #6: average distance from our offense to the first enemy worker
       #7: average distance from our offense to enemy anthill
       queenDist = 0
       workerDist = 0
       anthillDist = 0
-      for ant in myOffense:
-        queenDist += approxDist(ant.coords, enemyQueen.coords)
-        workerDist += approxDist(ant.coords, enemyWorkers[0].coords)
-        anthillDist += approxDist(ant.coords, enemyHill.coords)
-      score += (queenDist/len(myOffense)) * gene[5]
-      score += (workerDist/len(myOffense)) * gene[6]
-      score += (anthillDist/len(myOffense)) * gene[7]
+      if len(myOffense) > 0:
+        for ant in myOffense:
+          queenDist += approxDist(ant.coords, enemyQueen.coords)
+          if len(enemyWorkers) > 0:
+            workerDist += approxDist(ant.coords, enemyWorkers[0].coords)
+          anthillDist += approxDist(ant.coords, enemyHill.coords)
+        score += (queenDist/len(myOffense)) * gene[5]
+        score += (workerDist/len(myOffense)) * gene[6]
+        score += (anthillDist/len(myOffense)) * gene[7]
       #8: average distance from enemy offense to our queen
       #9: average distance from enemy offense to our anthill
       queenDist = 0
       anthillDist = 0
-      for ant in enemyOffense:
-        queenDist += approxDist(ant.coords, myQueen.coords)
-        anthillDist += approxDist(ant.coords, myHill.coords)
-      score += (queenDist/len(enemyOffense)) * gene[8]
-      score += (anthillDist/len(enemyOffense)) * gene[9]
-      score += approxDist(myQueen.coords, enemyQueen.coords) * gene[11]#11: distance between queens
+      if len(enemyOffense) > 0:
+        for ant in enemyOffense:
+          queenDist += approxDist(ant.coords, myQueen.coords)
+          anthillDist += approxDist(ant.coords, myHill.coords)
+        score += (queenDist/len(enemyOffense)) * gene[8]
+        score += (anthillDist/len(enemyOffense)) * gene[9]
+        score += approxDist(myQueen.coords, enemyQueen.coords) * gene[11]#11: distance between queens
       
-      if me is not self.me:
-        print("I am not me")
-      score = min(myScore - enemyScore, 95) if (myScore - enemyScore > 0) else max(myScore - enemyScore, -95)
-      win = getWinner(currentState)
-      if win is not None:
-        score = 100 if (win == 1) else -100
       return score if (me == self.me) else -score
 
      
