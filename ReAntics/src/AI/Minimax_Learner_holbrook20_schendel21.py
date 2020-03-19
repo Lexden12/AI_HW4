@@ -35,7 +35,7 @@ class AIPlayer(Player):
         self.population = []
         self.index = 0
         self.fitness = []
-        self.fileName = "AI\schendel21_holbrook20_population.txt"
+        self.fileName = "../schendel21_holbrook20_population.txt"
         self.mutationChance = 0.1
         self.mutationRange = 5.0
         self.gameCount = 0 #number of games we have played with this gene
@@ -52,7 +52,7 @@ class AIPlayer(Player):
       
     def initPopulation(self):
       try:
-        f = open(self.fileName.split('/')[1], "r")
+        f = open(self.fileName, "r")
         lines = f.readlines()
         print("Reading existing gene file")
         for line in lines:
@@ -118,7 +118,7 @@ class AIPlayer(Player):
       self.save()
       
     def save(self):
-      f = open('schendel21_holbrook20_population.txt', "w")
+      f = open(self.fileName.split('/')[1], "w")
       for gene in self.population:
         print(gene)
         for j, weight in enumerate(gene):
