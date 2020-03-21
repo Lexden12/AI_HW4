@@ -37,11 +37,12 @@ class AIPlayer(Player):
         self.fitness = []
         self.fileName = "../schendel21_holbrook20_population.txt"
         self.mutationChance = 0.1
-        self.mutationRange = 5.0
+        self.mutationRange = 3.0
         self.gameCount = 0 #number of games we have played with this gene
         self.maxGames = 10 #number of games we will play with each gene
         self.gen = 0 #Current generation number
         self.lastState = None #To save the last game state in case we win
+        self.winRate = 0 #This gens win rate
         self.initPopulation()
 
     def init2(self):
@@ -120,7 +121,6 @@ class AIPlayer(Player):
     def save(self):
       f = open(self.fileName.split('/')[1], "w")
       for gene in self.population:
-        print(gene)
         for j, weight in enumerate(gene):
           f.write(str(weight))
           if j != len(gene) - 1:
@@ -230,7 +230,7 @@ class AIPlayer(Player):
       else:
         win = getWinnerMock()
       if win is not None:
-        node.score = 100 if (win == 1) else -100
+        node.score = 10000 if (win == 1) else -10000
         node.score = node.score if (node.turn == self.me) else -node.score
         if node.parent is not None:
           node.parent.updateBounds(node, self.me)
@@ -322,6 +322,7 @@ class AIPlayer(Player):
         #Judge whether the current gene's fitness has been fully evaluated, if so advance to the next gene
         if(self.gameCount >= self.maxGames):
           self.fitness[self.index] /= self.gameCount
+          self.fitness[self.index] *= self.fitness[self.index]
           self.index += 1
           self.gameCount = 0
          
@@ -329,6 +330,8 @@ class AIPlayer(Player):
           if (self.index > len(self.population) - 1):
             self.gen += 1
             print("Generation {} Fitnesses: {}".format(self.gen, self.fitness))
+            print("Generation Win Rate: {}%".format(str(self.winRate/(self.maxGames*10)*100)))
+            self.winRate = 0
             self.nextGeneration()
             for i in range(len(self.fitness)):
               self.fitness[i] = 0
@@ -339,6 +342,7 @@ class AIPlayer(Player):
       fitness = 0
       if hasWon:
         fitness += 5
+        self.winRate += 1
       else:
         fitness -= 5
       #use self.lastState to determine what happened in the game
@@ -401,7 +405,7 @@ class AIPlayer(Player):
       enemyOffense = getAntList(currentState, enemy, (SOLDIER, DRONE, R_SOLDIER))
 
       score = 0
-      score += (myFood - enemyFood) * gene[0]#0: difference in food
+      score += (myFood) * gene[0]#0: food count
       score += (myQueen.health - enemyQueen.health) * gene[1]#1: difference in queen health
       score += (myHill.captureHealth - enemyHill.captureHealth) * gene[2]#2: difference in anthill health
       score += gene[4] if len(myWorkers) == 2 else 0#4: on/off based on two workers
