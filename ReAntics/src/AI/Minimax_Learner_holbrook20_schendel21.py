@@ -39,7 +39,7 @@ class AIPlayer(Player):
         self.mutationChance = 0.1
         self.mutationRange = 3.0
         self.gameCount = 0 #number of games we have played with this gene
-        self.maxGames = 10 #number of games we will play with each gene
+        self.maxGames = 1 #number of games we will play with each gene
         self.gen = 0 #Current generation number
         self.lastState = None #To save the last game state in case we win
         self.winRate = 0 #This gens win rate
@@ -51,6 +51,9 @@ class AIPlayer(Player):
       self.moveCount = -1
       self.me = 0
       
+    #initPopulation
+    #Description: Either reads in an existing population or creates a new one for the Genetic Algorithm
+    #
     def initPopulation(self):
       try:
         f = open(self.fileName, "r")
@@ -72,6 +75,12 @@ class AIPlayer(Player):
       for i in range(len(self.population)):
         self.fitness.append(0)
 
+    #matePopulation
+    #Description: Takes two genes and mates them by slicing for crossover along with a chance of mutation (defined in __init__)
+    #
+    #Parameters:
+    #   mom - One of the genes to mate
+    #   dad - The other gene to mate to produce two offspring
     def matePopulation(self, mom, dad):
        splitIndex = random.randint(0,12)
        childOne, childTwo= [], []
@@ -95,6 +104,8 @@ class AIPlayer(Player):
           
        return childOne, childTwo
     
+    #nextGeneration
+    #Description: Takes the current population and creates the next generation by mating pairs of the current population, weighted to account for fitnesses
     def nextGeneration(self):
       total = sum(self.fitness)
       newPopulation = []
@@ -310,9 +321,10 @@ class AIPlayer(Player):
 
     ##
     #registerWin
+    #Description: Tells the agent whether it won the last game in order to help it learn what is the best strategy for it to continue winning
     #
-    # This agent doesn't learn
-    #
+    #Parameter:
+    #   hasWon - Boolean value as to whether this agent won the last game or not
     def registerWin(self, hasWon):
         # Need currentGene and numberOfGames variables
         self.gameCount += 1
@@ -337,7 +349,12 @@ class AIPlayer(Player):
               self.fitness[i] = 0
             self.index = 0
        
-
+    ##
+    #evaluateFitness
+    #Description: Takes the last state of the game(saved in the class) as well as whether it won or not to determine how well the gene performed
+    #
+    #Parameter:
+    #   hasWon - Boolean value as to whether this agent won the last game or not
     def evaluateFitness(self, hasWon):
       fitness = 0
       if hasWon:
@@ -367,17 +384,11 @@ class AIPlayer(Player):
       return max(fitness + 15, 0) #prevent negative fitnesses(breaks nextGen)
  
     ##
-    #heuristicStepsToGoal
-    #Description: Gets the expected value of a state
-    # Weighs the value of the amount of food and workers and offense
-    # each player has and estimates how good of a position each player is in
-    # This makes the Max player seek to have no army, but rather, make two
-    # workers and gather as much food as possible as quickly as possible.
-    #
+    #utility
+    #Description: Uses a gene to weight differnet values and give a state of the game a score
+    # 
     #Parameters:
-    #   currentState - A clone of the current state (GameState)
-    #                 This will assumed to be a fast clone of the state
-    #                 i.e. the board will not be needed/used
+    #   currentState - The current state (GameState)
     #   gene         - A clone of the gene (a list of weights) that will be
     #                 used to calculate the score of the current state
     ##
